@@ -1,6 +1,6 @@
 import './navbar.css'
 import React from 'react'
-import { Stack, HStack, VStack, Flex, Button, ButtonGroup } from '@chakra-ui/react'
+import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text} from '@chakra-ui/react'
 
 const Navbar = () =>{
 
@@ -11,15 +11,15 @@ const Navbar = () =>{
                 <nav >
                     <HStack gap={500} >
                         <div>
-                    <h3>Portfolio</h3>
+                    <Text color={'#0C7FB0'}><strong>Portfolio</strong></Text>
                         </div>
-                        <HStack gap={20}> 
-                    <button>Home</button>
-                    <button>About</button>
-                    <button>Services</button>
-                    <button >Portfolio</button>
-                    <Button colorScheme='blue'>Contact me</Button>
-                        </HStack>
+                        <ButtonGroup  spacing='25'> 
+                    <Button color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>Home</Button>
+                    <Button color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>About</Button>
+                    <Button color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>Services</Button>
+                    <Button  color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>Portfolio</Button>
+                    <Button bg={'#0C7FB0'} color={'#F9F9F9'} padding={8} border={'none'} borderRadius={5}>Contact me</Button>
+                        </ButtonGroup>
                     </HStack>
                 </nav>
             </Flex>
