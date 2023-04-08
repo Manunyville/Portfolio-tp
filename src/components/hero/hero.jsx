@@ -8,7 +8,7 @@ const Hero = () =>{
     return(
         <>
             <div>
-                <HStack>
+                <HStack justify={'center'} gap={300}>
                     <VStack justify={"space-around"}>
                     <Text>Hello, I'm</Text>
                     <Heading>Manuel Nyville</Heading>
@@ -19,7 +19,10 @@ const Hero = () =>{
                         <Button color={'#0C7FB0'} colorScheme='teal' variant='outline' >See Portfolio</Button>
                     </ButtonGroup>
                     </VStack>
+                    <HStack>
+
                    <img src={Foto}className="fotoMia" />                
+                    </HStack>
                 </HStack>
 
             </div>
