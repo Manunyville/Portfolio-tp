@@ -19,7 +19,7 @@ const Navbar = () =>{
                     <Button color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>About</Button>
                     <Button color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>Services</Button>
                     <Button  color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>Portfolio</Button>
-                    <Button bg={'#0C7FB0'} color={'#F9F9F9'} padding={8} border={'none'} borderRadius={5}>Contact me</Button>
+                    <Button bg={'#0C7FB0'} color={'#F9F9F9'} padding={4} border={'none'} borderRadius={5} size='xs'>Contact me</Button>
                         </ButtonGroup>
                     </HStack>
                 </nav>
