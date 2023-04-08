@@ -1,7 +1,7 @@
 import React from "react";
-import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Heading} from '@chakra-ui/react'
+import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Heading, Image} from '@chakra-ui/react'
 import './hero.css'
-import Foto from '../../assets/img/Retrato.png'
+import Foto from '../../assets/img/retrato.jpeg'
 const Hero = () =>{
 
 
@@ -16,10 +16,10 @@ const Hero = () =>{
                     <Text>I am a Front end developer...</Text>
                     <ButtonGroup>
                         <Button  color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>Hire me</Button>
-                        <Button color={'#0C7FB0'} border={'1px', '#0C7FB0'}>See Portfolio</Button>
+                        <Button color={'#0C7FB0'} colorScheme='teal' variant='outline' >See Portfolio</Button>
                     </ButtonGroup>
                     </VStack>
-
+                   <img src={Foto}className="fotoMia" />                
                 </HStack>
 
             </div>

@@ -1,14 +1,20 @@
 import { extendTheme } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
-export default extendTheme ({
+export default extendTheme
 
-    Button : {
-        primary: {
+//     components:{
 
-            color: "#061820",
-            border:"none",
-            bg:"#FFFFFF",
-            variant:"link",
-        }
-    }
-})
+//         Button : {
+//             Variants: {
+//               primary: (props) => ({
+
+//                   color: "#061820",
+//                   border:"none",
+//                   bg:"#FFFFFF",
+//                   variant:"link",
+//                 }),
+//             },
+//         },
+//     },
+
+// })

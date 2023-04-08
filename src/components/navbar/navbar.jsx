@@ -1,6 +1,7 @@
 import './navbar.css'
 import React from 'react'
 import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text} from '@chakra-ui/react'
+import '../../themes'
 
 const Navbar = () =>{
 
@@ -14,7 +15,7 @@ const Navbar = () =>{
                     <Text color={'#0C7FB0'}><strong>Portfolio</strong></Text>
                         </div>
                         <ButtonGroup  spacing='25'> 
-                    <Button color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>Home</Button>
+                {/*     <Button Variants={primary} >Home</Button>*/}
                     <Button color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>About</Button>
                     <Button color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>Services</Button>
                     <Button  color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>Portfolio</Button>
