@@ -17,10 +17,10 @@ const Hero = () =>{
             <div className="divHero">
                 <HStack justify={'center'} gap={300}>
                     <VStack justify={"space-around"}>                
-                    <Text >Hello, I'm</Text>                        
+                    <Text fontSize='xl' color={'#0C7FB0'}>Hello, I'm</Text>                        
                     <Heading>Manuel Nyville</Heading>
-                    <h3>Front End Developer</h3>
-                    <Text>I am a Front end developer...</Text>
+                    <Heading fontSize='xl' color={'#0C7FB0'}>Front End Developer</Heading>
+                    <Text color={'#6D7173'}>I am a Front end developer...</Text>
                     <ButtonGroup>
                         <Button  as={motion.button}  whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>Hire me</Button>
                         <Button  as={motion.button}  whileHover={{  color:'#0C7FB0' }} color={'#0C7FB0'} colorScheme='teal' variant='outline' >See Portfolio</Button>
@@ -40,7 +40,7 @@ const Hero = () =>{
                         <Text>0 Awards</Text>
                         </CardBody>
                      </Card>
-                     <Card bg={'#F9F9F9'}>
+                     <Card as={motion.div} whileHover={{ scale:1.3, color:'#0C7FB0' }} bg={'#F9F9F9'}>
                         <CardHeader>
                         <Heading size='md'>  <FaUsers/></Heading>
                         </CardHeader>
@@ -48,7 +48,7 @@ const Hero = () =>{
                         <Text>10+ Clients</Text>
                         </CardBody>
                      </Card>
-                     <Card bg={'#F9F9F9'}>
+                     <Card as={motion.div} whileHover={{ scale:1.3, color:'#0C7FB0' }} bg={'#F9F9F9'}>
                         <CardHeader>
                         <Heading size='md'> <FaAward/> </Heading>
                         </CardHeader>
@@ -56,7 +56,7 @@ const Hero = () =>{
                         <Text>02 Months experience</Text>
                         </CardBody>
                      </Card>
-                     <Card bg={'#F9F9F9'}> 
+                     <Card as={motion.div} whileHover={{ scale:1.3, color:'#0C7FB0' }} bg={'#F9F9F9'}> 
                        <CardHeader>
                         <Heading size='md'> <FaTrophy/> </Heading>
                        </CardHeader>
