@@ -2,6 +2,7 @@ import React from "react";
 import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Heading, Image, SimpleGrid, Card, CardHeader, CardBody, CardFooter} from '@chakra-ui/react'
 import './hero.css'
 import Foto from '../../assets/img/retrato.jpeg'
+import { motion } from "framer-motion"
 
 import { RiMedalLine } from "react-icons/ri";
 import { FaAward, FaUsers, FaTrophy } from "react-icons/fa";
@@ -21,8 +22,8 @@ const Hero = () =>{
                     <h3>Front End Developer</h3>
                     <Text>I am a Front end developer...</Text>
                     <ButtonGroup>
-                        <Button  color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>Hire me</Button>
-                        <Button color={'#0C7FB0'} colorScheme='teal' variant='outline' >See Portfolio</Button>
+                        <Button  as={motion.button}  whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>Hire me</Button>
+                        <Button  as={motion.button}  whileHover={{  color:'#0C7FB0' }} color={'#0C7FB0'} colorScheme='teal' variant='outline' >See Portfolio</Button>
                     </ButtonGroup>
                     </VStack>
                     <HStack>
@@ -30,8 +31,8 @@ const Hero = () =>{
                    <img src={Foto}className="fotoMia" />                
                     </HStack>
                 </HStack>
-                <Stack justify={"space-around"} flexDirection={"row"} width={1100} margin={"0 auto"}>
-                    <Card bg={'#F9F9F9'}>
+                <Stack as={motion.div} whileHover={{  color:'#0C7FB0' }} justify={"space-around"} flexDirection={"row"} width={1100} margin={"0 auto"}>
+                    <Card as={motion.div} whileHover={{ scale:1.3, color:'#0C7FB0' }} bg={'#F9F9F9'}>
                         <CardHeader>
                         <Heading size='md'> <RiMedalLine/> </Heading>
                         </CardHeader>
