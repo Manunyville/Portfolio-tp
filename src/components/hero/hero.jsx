@@ -31,8 +31,8 @@ const Hero = () =>{
                    <img src={Foto}className="fotoMia" />                
                     </HStack>
                 </HStack>
-                <Stack as={motion.div} whileHover={{  color:'#0C7FB0' }} justify={"space-around"} flexDirection={"row"} width={1100} margin={"0 auto"}>
-                    <Card as={motion.div} whileHover={{ scale:1.3, color:'#0C7FB0' }} bg={'#F9F9F9'}>
+                <Stack as={motion.div} whileHover={{  color:'#0C7FB0' }}  justify={"space-around"} flexDirection={"row"} width={1100} margin={"0 auto"}>
+                    <Card as={motion.div} whileHover={{ scale:1.3, color:'#0C7FB0' }}  bg={'#F9F9F9'}>
                         <CardHeader>
                         <Heading size='md'> <RiMedalLine/> </Heading>
                         </CardHeader>
@@ -40,7 +40,7 @@ const Hero = () =>{
                         <Text>0 Awards</Text>
                         </CardBody>
                      </Card>
-                     <Card as={motion.div} whileHover={{ scale:1.3, color:'#0C7FB0' }} bg={'#F9F9F9'}>
+                     <Card as={motion.div} whileHover={{ scale:1.3, color:'#0C7FB0' }}  bg={'#F9F9F9'}>
                         <CardHeader>
                         <Heading size='md'>  <FaUsers/></Heading>
                         </CardHeader>
@@ -48,7 +48,7 @@ const Hero = () =>{
                         <Text>10+ Clients</Text>
                         </CardBody>
                      </Card>
-                     <Card as={motion.div} whileHover={{ scale:1.3, color:'#0C7FB0' }} bg={'#F9F9F9'}>
+                     <Card as={motion.div} whileHover={{ scale:1.3, color:'#0C7FB0' }}  bg={'#F9F9F9'}>
                         <CardHeader>
                         <Heading size='md'> <FaAward/> </Heading>
                         </CardHeader>
@@ -56,7 +56,7 @@ const Hero = () =>{
                         <Text>02 Months experience</Text>
                         </CardBody>
                      </Card>
-                     <Card as={motion.div} whileHover={{ scale:1.3, color:'#0C7FB0' }} bg={'#F9F9F9'}> 
+                     <Card as={motion.div} whileHover={{ scale:1.3, color:'#0C7FB0' }}  bg={'#F9F9F9'}> 
                        <CardHeader>
                         <Heading size='md'> <FaTrophy/> </Heading>
                        </CardHeader>
