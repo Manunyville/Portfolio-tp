@@ -30,7 +30,7 @@ const Hero = () =>{
                    <img src={Foto}className="fotoMia" />                
                     </HStack>
                 </HStack>
-                <Stack justify={"space-evenly"} flexDirection={"row"} >
+                <Stack justify={"space-around"} flexDirection={"row"} width={1100} margin={"0 auto"}>
                     <Card bg={'#F9F9F9'}>
                         <CardHeader>
                         <Heading size='md'> <RiMedalLine/> </Heading>
@@ -56,9 +56,9 @@ const Hero = () =>{
                         </CardBody>
                      </Card>
                      <Card bg={'#F9F9F9'}> 
-                        <CardHeader>
+                       <CardHeader>
                         <Heading size='md'> <FaTrophy/> </Heading>
-                        </CardHeader>
+                       </CardHeader>
                         <CardBody>
                         <Text>+20 Proyects</Text>
                         </CardBody>
