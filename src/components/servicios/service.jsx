@@ -8,14 +8,14 @@ const Services = () =>{
  
 
     return(
-        <Container>
+        <Container width={1200}>
             <VStack>
-                <VStack>
+                <VStack marginTop={20}>
                     <Text>Services I provide</Text>
                     <Heading>My Services</Heading>
                 </VStack>
-                <HStack height={400} width={600} gap={5}>
-                    <Card justify={'center'} bg={'#F9F9F9'}>
+                <HStack height={400} width={1000} gap={5}>
+                    <Card justify={'center'} bg={'#F9F9F9'} width={600}>
                         <CardHeader>
                             <Image className='webImg' src={Web}/>
                         <Heading size='md'> Website design</Heading>
@@ -25,7 +25,7 @@ const Services = () =>{
                         </CardBody>
                         
                     </Card>
-                    <Card justify={'center'} bg={'#F9F9F9'}>
+                    <Card justify={'center'} bg={'#F9F9F9'} width={600}>
                         <CardHeader>
                         <Image className='webImg' src={Web}/>
                         <Heading size='md'>Application desing</Heading>
@@ -35,7 +35,7 @@ const Services = () =>{
                         </CardBody>
                         
                     </Card>
-                    <Card bg={'#F9F9F9'} justify={'center'} alignItems={'center'}>
+                    <Card bg={'#F9F9F9'} justify={'center'} alignItems={'center'} width={600}>
                         <CardHeader>
                         <Image className='webImg' src={Web}/>
                         <Heading size='md'> Dashboard design</Heading>
