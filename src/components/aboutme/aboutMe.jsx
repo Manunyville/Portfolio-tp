@@ -7,7 +7,7 @@ import Fotaki from '../../assets/img/fotoabout.png'
 const About = () =>{
 
     return(
-        <Container>
+        <Container width={1200}>
             <HStack marginTop={10}>
                 
                     <Stack>

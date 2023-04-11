@@ -10,14 +10,14 @@ const Services = () =>{
     return(
         <Container width={1200}>
             <VStack>
-                <VStack marginTop={20}>
-                    <Text>Services I provide</Text>
+                <VStack marginTop={10}>
+                    <Text color={'#0C7FB0'}>Services I provide</Text>
                     <Heading>My Services</Heading>
                 </VStack>
-                <HStack height={400} width={1000} gap={5}>
-                    <Card justify={'center'} bg={'#F9F9F9'} width={600}>
+                <HStack height={300} width={1000} gap={5}>
+                    <Card  marginLeft={5} alignItems={'center'}  bg={'#F9F9F9'} width={600}>
                         <CardHeader>
-                            <Image className='webImg' src={Web}/>
+                            <Image marginLeft={10} className='webImg' src={Web}/>
                         <Heading size='md'> Website design</Heading>
                         </CardHeader>
                         <CardBody>
@@ -25,9 +25,9 @@ const Services = () =>{
                         </CardBody>
                         
                     </Card>
-                    <Card justify={'center'} bg={'#F9F9F9'} width={600}>
+                    <Card alignItems={'center'} marginLeft={5} bg={'#F9F9F9'} width={600}>
                         <CardHeader>
-                        <Image className='webImg' src={Web}/>
+                        <Image marginLeft={10} className='webImg' src={Web}/>
                         <Heading size='md'>Application desing</Heading>
                         </CardHeader>
                         <CardBody>
@@ -35,9 +35,9 @@ const Services = () =>{
                         </CardBody>
                         
                     </Card>
-                    <Card bg={'#F9F9F9'} justify={'center'} alignItems={'center'} width={600}>
+                    <Card bg={'#F9F9F9'}  marginLeft={5} alignItems={'center'} width={600}>
                         <CardHeader>
-                        <Image className='webImg' src={Web}/>
+                        <Image marginLeft={10} className='webImg' src={Web}/>
                         <Heading size='md'> Dashboard design</Heading>
                         </CardHeader>
                         <CardBody>
