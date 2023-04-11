@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Heading, Image, SimpleGrid, Card, CardHeader, CardBody, CardFooter} from '@chakra-ui/react'
+import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Heading, Image, Card, CardHeader, CardBody} from '@chakra-ui/react'
 import './hero.css'
 import Foto from '../../assets/img/retrato.jpeg'
 import { motion } from "framer-motion"
