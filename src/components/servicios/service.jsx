@@ -2,6 +2,7 @@ import './service.css'
 import React from 'react'
 import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Container, Heading, Image, Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import { motion } from "framer-motion"
+import Web from '../../assets/img/website.png'
 
 const Services = () =>{
  
@@ -13,9 +14,10 @@ const Services = () =>{
                     <Text>Services I provide</Text>
                     <Heading>My Services</Heading>
                 </VStack>
-                <HStack>
-                    <Card>
+                <HStack height={400} width={600} gap={5}>
+                    <Card justify={'center'} bg={'#F9F9F9'}>
                         <CardHeader>
+                            <Image className='webImg' src={Web}/>
                         <Heading size='md'> Website design</Heading>
                         </CardHeader>
                         <CardBody>
@@ -23,8 +25,9 @@ const Services = () =>{
                         </CardBody>
                         
                     </Card>
-                    <Card>
+                    <Card justify={'center'} bg={'#F9F9F9'}>
                         <CardHeader>
+                        <Image className='webImg' src={Web}/>
                         <Heading size='md'>Application desing</Heading>
                         </CardHeader>
                         <CardBody>
@@ -32,8 +35,9 @@ const Services = () =>{
                         </CardBody>
                         
                     </Card>
-                    <Card>
+                    <Card bg={'#F9F9F9'} justify={'center'} alignItems={'center'}>
                         <CardHeader>
+                        <Image className='webImg' src={Web}/>
                         <Heading size='md'> Dashboard design</Heading>
                         </CardHeader>
                         <CardBody>
