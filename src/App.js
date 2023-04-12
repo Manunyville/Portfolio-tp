@@ -1,4 +1,5 @@
 import './App.css';
+import Choose from './components/Chooseme/chooseme';
 import About from './components/aboutme/aboutMe';
 import Hero from './components/hero/hero';
 import Navbar from './components/navbar/navbar';
@@ -14,6 +15,7 @@ function App() {
     <About/>
     <Services/>
     <Portfolio/>
+    <Choose/>
     </div>
   );
 }
