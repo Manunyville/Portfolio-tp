@@ -22,7 +22,7 @@ const Portfolio = () =>{
                         </CardHeader>
                         <CardBody>
                         <Text>Is a Twitter profile as you were Messi</Text>
-                            <Button marginLeft={10}>View on github</Button>
+                            <Button  marginTop={10} as={motion.button} paddingX={20} whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>View on github</Button>
                         </CardBody>
                        
                         
@@ -34,7 +34,7 @@ const Portfolio = () =>{
                         </CardHeader>
                         <CardBody>
                         <Text>I create a web page for a forniture market</Text>
-                            <Button marginLeft={10}  as={motion.button} padding={3} whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>View on github</Button>
+                            <Button marginTop={4} as={motion.button} paddingX={20} whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>View on github</Button>
                         </CardBody>
                        
                         
@@ -46,11 +46,14 @@ const Portfolio = () =>{
                         </CardHeader>
                         <CardBody>
                         <Text>I create a page design for a hotel in Mar del plata.</Text>
-                            <Button marginLeft={10}>View on github</Button>
+                            <Button marginTop={4} as={motion.button} paddingX={20} whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>View on github</Button>
                         </CardBody> 
                         
                     </Card>
                 </HStack>
+                <Stack>
+                    <Button marginTop={4} as={motion.button} paddingX={10} whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'> View All</Button>
+                </Stack>
             </VStack>
         </Container>
     )
