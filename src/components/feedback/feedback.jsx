@@ -54,7 +54,8 @@ const Testimonial = () =>{
             </HStack>
             <VStack>
                 <div>aca necesito un carrusel para mas opiniones</div>
-                <Button >View all</Button>
+                <Button marginTop={4} as={motion.button} paddingX={10} whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'> View All</Button>
+
             </VStack>
         </VStack>
     </Container>
