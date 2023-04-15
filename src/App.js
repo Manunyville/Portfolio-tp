@@ -3,6 +3,7 @@ import Choose from './components/Chooseme/chooseme';
 import About from './components/aboutme/aboutMe';
 import Contact from './components/contact/contact';
 import Testimonial from './components/feedback/feedback';
+import Footer from './components/footer/footer';
 import Hero from './components/hero/hero';
 import Navbar from './components/navbar/navbar';
 import Portfolio from './components/portfolio/myportfolio';
@@ -20,6 +21,7 @@ function App() {
     <Choose/>
     <Testimonial/>
     <Contact/>
+    <Footer/>
     </div>
   );
 }
