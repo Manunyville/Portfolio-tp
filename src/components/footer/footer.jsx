@@ -1,12 +1,15 @@
 import './footer.css'
 import React from 'react'
 import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Container, Heading, Image,Card, CardHeader, CardBody, Input, } from '@chakra-ui/react'
-import { motion } from "framer-motion"
+import { color, motion } from "framer-motion"
+import {AiFillInstagram } from "react-icons/ai";
+
 
 
 const Footer = () =>{
 
     return(
+        <section>
         <Container width={1200} height={450}>
             <HStack w={1200}  bg={'#061820'} color={'#F9F9F9'}>
                 <VStack>
@@ -41,9 +44,9 @@ const Footer = () =>{
                 </VStack>
                 <VStack>
                     <Text>About </Text>
-                    <Button>Blog</Button>
-                    <Button>Mission</Button>
-                    <Button>My story</Button>
+                    <Button as={motion.button} whileHover={{color : '#07CFB0'}} color={'#F9F9F9'} variant='link' >Blog</Button>
+                    <Button as={motion.button} whileHover={{color : '#07CFB0'}} color={'#F9F9F9'} variant='link'>Mission</Button>
+                    <Button as={motion.button} whileHover={{color : '#07CFB0'}} color={'#F9F9F9'} variant='link'>My story</Button>
 
                 </VStack>
                 <VStack>
@@ -54,10 +57,10 @@ const Footer = () =>{
                 </VStack>
                 <VStack>
                     <Text>Social media</Text>
-                    <Button></Button>
-                    <Button></Button>
-                    <Button></Button>
-                    <Button></Button>
+                    <Button as={motion.button} whileHover={{color : '#07CFB0'}} color={'#F9F9F9'}>Instagram</Button>
+                    <Button>Facebook</Button>
+                    <Button>Twitter</Button>
+                    <Button as={motion.button} whileHover={{color : '#07CFB0'}} color={'#F9F9F9'}> <AiFillInstagram/> </Button>
                     
 
                 </VStack>
@@ -65,6 +68,7 @@ const Footer = () =>{
             </HStack>
 
         </Container>
+        </section>
     )
 }
 export default Footer
