@@ -10,15 +10,15 @@ const Contact = () =>{
     return(
         <Container>
             <VStack>
-                <Text>Have something in your mind?</Text>
+                <Text color={'#0C7FB0'}>Have something in your mind?</Text>
                 <Heading>Contact me</Heading>
                 <Stack >
                 <form>
                     <Stack gap={11}>
 
-                    <Input type="text" variant='filled' placeholder='Full name' padding={25} width={450}/>
-                    <Input type="text"  variant='filled' placeholder='Email'padding={25} width={450}/>
-                    <Input type="text" variant='filled' placeholder='Message' height={100} width={450}/>
+                    <Input type="text" variant='filled' borderRadius={0} placeholder='Full name' padding={25} width={450}/>
+                    <Input type="text"  variant='filled' borderRadius={0} placeholder='Email'padding={25} width={450}/>
+                    <Input type="text" variant='filled' borderRadius={0} placeholder='Message' height={100} width={450}/>
                     </Stack>
 
                 </form>
