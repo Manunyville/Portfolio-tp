@@ -1,7 +1,8 @@
 import './contact.css'
 import React from 'react'
-import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Container, Heading, Image,Card, CardHeader, CardBody, } from '@chakra-ui/react'
+import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Container, Heading, Image,Card, CardHeader, CardBody, Input} from '@chakra-ui/react'
 import { motion } from "framer-motion"
+
 
 
 const Contact = () =>{
@@ -11,15 +12,17 @@ const Contact = () =>{
             <VStack>
                 <Text>Have something in your mind?</Text>
                 <Heading>Contact me</Heading>
+                <Stack >
                 <form>
-                    <label>Full Name </label>
-                    <input type="text" />
-                    <label>Email</label>
-                    <input type="text" />
-                    <label >Message</label>
-                    <input type="text" />
-                    <Button>Submit</Button>
+                    <Stack gap={11}>
+
+                    <Input type="text" variant='filled' placeholder='Full name' padding={25} width={450}/>
+                    <Input type="text"  variant='filled' placeholder='Email'padding={25} width={450}/>
+                    <Input type="text" variant='filled' placeholder='Message' height={100} width={450}/>
+                    </Stack>
+
                 </form>
+                </Stack>
             </VStack>
         </Container>
     )
