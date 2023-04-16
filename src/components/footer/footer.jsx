@@ -2,16 +2,16 @@ import './footer.css'
 import React from 'react'
 import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Container, Heading, Image,Card, CardHeader, CardBody, Input, } from '@chakra-ui/react'
 import { color, motion } from "framer-motion"
-import {AiFillInstagram } from "react-icons/ai";
-
-
+import {AiFillInstagram, AiOutlineYoutube } from "react-icons/ai";
+import {TfiTwitter} from "react-icons/tfi";
+import {  FiFacebook} from "react-icons/fi";
 
 const Footer = () =>{
 
     return(
         <section>
-        <Container width={1200} height={450}>
-            <HStack w={1200}  bg={'#061820'} color={'#F9F9F9'}>
+        <Container width={1200} height={450} justifyContent={'center'}>
+            <HStack w={1200}  bg={'#061820'} color={'#F9F9F9'} justify={'center'}>
                 <VStack>
                     <Heading size='sm'>Customer support</Heading>
                     <Text>Contact me and get consultation on your design</Text>
@@ -31,16 +31,16 @@ const Footer = () =>{
                     </form>
                 </VStack>
             </HStack>
-            <HStack w={1200}  bg={'#061820'} color={'#F9F9F9'}>
+            <HStack w={1200}  bg={'#061820'} color={'#F9F9F9'} justify={'space-evenly'} alignContent={'center'}>
                 <VStack>
-                    <Heading size='xs'>Manuel Nyville Vito</Heading>
+                    <Heading size='xs' color={'#07CFB0'}>Manuel Nyville Vito</Heading>
                     <Text>Front end Developer</Text>
                 </VStack>
                 <VStack>
                     <Text>Services</Text>
-                    <Text>Website design</Text>
-                    <Text>Application Design</Text>
-                    <Text>Dashboard design</Text>
+                    <Button as={motion.button} whileHover={{color : '#07CFB0'}} color={'#F9F9F9'} variant='link' >Website design</Button>
+                    <Button as={motion.button} whileHover={{color : '#07CFB0'}} color={'#F9F9F9'} variant='link'>Application design</Button>
+                    <Button as={motion.button} whileHover={{color : '#07CFB0'}} color={'#F9F9F9'} variant='link'>Dashboard design</Button>
                 </VStack>
                 <VStack>
                     <Text>About </Text>
@@ -57,10 +57,10 @@ const Footer = () =>{
                 </VStack>
                 <VStack>
                     <Text>Social media</Text>
-                    <Button as={motion.button} whileHover={{color : '#07CFB0'}} color={'#F9F9F9'}>Instagram</Button>
-                    <Button>Facebook</Button>
-                    <Button>Twitter</Button>
-                    <Button as={motion.button} whileHover={{color : '#07CFB0'}} color={'#F9F9F9'}> <AiFillInstagram/> </Button>
+                    <Button as={motion.button} whileHover={{ scale: 1.2  }} colorScheme='teal' variant={'ghost'}> <FiFacebook/> </Button>
+                    <Button as={motion.button} whileHover={{ scale: 1.2 }} colorScheme='teal' variant={'ghost'}> <TfiTwitter/> </Button>
+                    <Button as={motion.button} whileHover={{ scale: 1.2 }} colorScheme='teal' variant={'ghost'}> <AiOutlineYoutube/> </Button>
+                    <Button as={motion.button} whileHover={{ scale: 1.2 }} colorScheme='teal' variant={'ghost'}> <AiFillInstagram/> </Button>
                     
 
                 </VStack>
