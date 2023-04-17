@@ -15,26 +15,41 @@ const Navbar = () => {
                         <div>
                             <Heading color={'#0C7FB0'} size='md'><strong>Portfolio</strong></Heading>
                         </div>
-                    <ButtonGroup spacing='25'>
-                        <Button as={motion.button}  whileHover={{  color:'#0C7FB0' }} color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>
-                            Home
-                        </Button>
-                        <Button as={motion.button}  whileHover={{ color:'#0C7FB0' }} color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>
-                            About
-                        </Button>
-                        <Button as={motion.button}  whileHover={{ color:'#0C7FB0' }} color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>
-                            Services
-                        </Button>
-                        <Button as={motion.button}  whileHover={{ color:'#0C7FB0' }} color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>
-                            Portfolio
-                        </Button>
-                        <Button as={motion.button}  whileHover={{  color:'#0C7FB0' }} bg={'#0C7FB0'} color={'#F9F9F9'} padding={4} border={'none'} borderRadius={5} size='xs'>
-                            Contact me
-                        </Button>
-                    </ButtonGroup>
-                </HStack>
-            </nav>
-        </Flex >
+                        <ButtonGroup spacing='25'>
+                            <a href="#hero">
+
+                                <Button as={motion.button} whileHover={{ color: '#0C7FB0' }} color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>
+                                    Home
+                                </Button>
+                            </a>
+                            <a href="#about">
+
+                                <Button as={motion.button} whileHover={{ color: '#0C7FB0' }} color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>
+                                    About
+                                </Button>
+                            </a>
+                            <a href="#misServicios">
+
+                                <Button as={motion.button} whileHover={{ color: '#0C7FB0' }} color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>
+                                    Services
+                                </Button>
+                            </a>
+                            <a href="#proyectos">
+
+                                <Button as={motion.button} whileHover={{ color: '#0C7FB0' }} color={'#061820'} border={'none'} bg={'#FFFFFF'} variant='link'>
+                                    Portfolio
+                                </Button>
+                            </a>
+                            <a href="#contact">
+
+                                <Button as={motion.button} whileHover={{ color: '#0C7FB0' }} bg={'#0C7FB0'} color={'#F9F9F9'} padding={4} border={'none'} borderRadius={5} size='xs'>
+                                    Contact me
+                                </Button>
+                            </a>
+                        </ButtonGroup>
+                    </HStack>
+                </nav>
+            </Flex >
         </Container>
     )
 

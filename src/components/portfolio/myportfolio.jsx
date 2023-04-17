@@ -8,7 +8,7 @@ import Fotaki from '../../assets/img/fotoabout.png'
 const Portfolio = () =>{
 
     return(
-        <Container width={1200}>
+        <Container width={1200} id='proyectos'>
             <VStack >
                 <VStack>
                     <Text color={'#0C7FB0'}>Recent projects</Text>

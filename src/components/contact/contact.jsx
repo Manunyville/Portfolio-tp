@@ -72,7 +72,7 @@ const Contact = () => {
         );
     }
     return (
-        <Container>
+        <Container id='contact'>
             <VStack>
                 <Text color={'#0C7FB0'}>Have something in your mind?</Text>
                 <Heading>Contact me</Heading> 
