@@ -1,8 +1,8 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 body{
-    width: 1400px ;
+    width: 100% ;
     background-color: #FFFFFF;
 }

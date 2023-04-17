@@ -6,28 +6,30 @@ import {AiFillInstagram, AiOutlineYoutube } from "react-icons/ai";
 import {TfiTwitter} from "react-icons/tfi";
 import {  FiFacebook} from "react-icons/fi";
 
+
+
 const Footer = () =>{
 
     return(
        
    
-        <Stack width={1200} marginLeft={40} bg={'#061820'} >
+        <Stack width={1200} marginLeft={40} bg={'#061820'} marginTop={45}>
 
-            <HStack w={1200}  bg={'#061820'} color={'#F9F9F9'} justify={'center'} marginBottom={0}>
-                <VStack>
+            <HStack w={1200}  bg={'#061820'} color={'#F9F9F9'} justify={'space-evenly'} marginTop={10}>
+                <VStack > 
                     <Heading size='sm'>Customer support</Heading>
-                    <Text>Contact me and get consultation on your design</Text>
+                    <Text fontSize={'xs'}>Contact me and get consultation on your design</Text>
                 </VStack>
                 <VStack>
                     <Heading size='sm'>Get Deal & Reveals</Heading>
-                    <Text>Sing up for the email Newslleter.</Text>
+                    <Text fontSize={'xs'}>Sing up for the email Newslleter.</Text>
                 </VStack>
                 <VStack>
                     <form >
-                        <HStack>
+                        <HStack >
 
-                        <Input type="email" placeholder='Enter email' borderRadius={0} paddingX={75}/>
-                        <Button marginTop={4} borderRadius={0} as={motion.button} paddingX={10} whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>Join</Button>
+                        <Input type="email" placeholder='Enter email' borderRadius={0} paddingX={35} bg={'#FFFFFF'} paddingY={7}/>
+                        <Button marginTop={4} borderRadius={0} as={motion.button} paddingX={8} paddingY={7} whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>Join</Button>
                         </HStack>
 
                     </form>
