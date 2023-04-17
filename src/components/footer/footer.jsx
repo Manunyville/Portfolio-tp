@@ -9,9 +9,11 @@ import {  FiFacebook} from "react-icons/fi";
 const Footer = () =>{
 
     return(
-        <section>
-        <Container width={1200} height={450} justifyContent={'center'}>
-            <HStack w={1200}  bg={'#061820'} color={'#F9F9F9'} justify={'center'}>
+       
+   
+        <Stack width={1200} marginLeft={40} bg={'#061820'} >
+
+            <HStack w={1200}  bg={'#061820'} color={'#F9F9F9'} justify={'center'} marginBottom={0}>
                 <VStack>
                     <Heading size='sm'>Customer support</Heading>
                     <Text>Contact me and get consultation on your design</Text>
@@ -66,9 +68,9 @@ const Footer = () =>{
                 </VStack>
 
             </HStack>
+        </Stack>
 
-        </Container>
-        </section>
+
     )
 }
 export default Footer
