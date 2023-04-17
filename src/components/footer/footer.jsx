@@ -41,28 +41,48 @@ const Footer = () => {
                     <Text>Front end Developer</Text>
                 </VStack>
                 <VStack>
+                    <a href="#misServicios">
                     <Text>Services</Text>
+                    </a>
+                    <a href="#misServicios">
+
                     <Button as={motion.button} whileHover={{ color: '#07CFB0' }} color={'#F9F9F9'} variant='link'  >
                         Website design
                     </Button>
+                    </a>
+                    <a href="#misServicios">
+
                     <Button as={motion.button} whileHover={{ color: '#07CFB0' }} color={'#F9F9F9'} variant='link'>
                         Application design
                     </Button>
+                    </a>
+                    <a href="#misServicios">
+
                     <Button as={motion.button} whileHover={{ color: '#07CFB0' }} color={'#F9F9F9'} variant='link'>
                         Dashboard design
                     </Button>
+                    </a>
                 </VStack>
                 <VStack>
+                    <a href="#about">
                     <Text>About </Text>
+
+                    </a>
+                    <a href="#hero">
                     <Button as={motion.button} whileHover={{ color: '#07CFB0' }} color={'#F9F9F9'} variant='link' >
                         Blog
                     </Button>
+                    </a>
+                    <a href="#eligeme">
                     <Button as={motion.button} whileHover={{ color: '#07CFB0' }} color={'#F9F9F9'} variant='link'>
                         Mission
                     </Button>
+                    </a>
+                    <a href="#testimonios">
                     <Button as={motion.button} whileHover={{ color: '#07CFB0' }} color={'#F9F9F9'} variant='link'>
                         My story
                     </Button>
+                    </a>
 
                 </VStack>
                 <VStack>

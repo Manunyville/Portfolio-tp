@@ -13,7 +13,7 @@ const Hero = () =>{
     
     return(
         
-        <section>
+        <section id="hero">
             <div className="divHero">
                 <HStack justify={'center'} gap={300}>
                     <VStack justify={"space-around"}>                

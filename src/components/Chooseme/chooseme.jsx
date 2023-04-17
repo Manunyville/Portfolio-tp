@@ -8,7 +8,7 @@ import Web from '../../assets/img/website.png'
 const Choose = () =>{
 
     return(
-        <Container width={1200} padding={10}>
+        <Container width={1200} padding={10} id='eligeme'>
             <VStack>
                 <VStack>
                     <Text color={'#0C7FB0'}>Why you should choose me</Text>
