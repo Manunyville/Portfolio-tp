@@ -1,8 +1,10 @@
 import './contact.css'
 import React from 'react'
 import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Container, Heading, Image, Card, CardHeader, CardBody, Input,Textarea } from '@chakra-ui/react'
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import { useForm, ValidationError } from '@formspree/react';
+import Azul from '../../assets/img/imgabstractaderecha.png';                   
+
 
 
 
@@ -76,9 +78,10 @@ const Contact = () => {
             <VStack>
                 <Text color={'#0C7FB0'}>Have something in your mind?</Text>
                 <Heading>Contact me</Heading> 
-                    <Stack gap={11} >
+                    <HStack >
                         <ContactForm/>
-                    </Stack>
+                        <Image src={Azul} />                   
+                    </HStack>
             </VStack>
         </Container>
     )
