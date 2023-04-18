@@ -22,8 +22,17 @@ const Hero = () =>{
                     <Heading fontSize='xl' color={'#0C7FB0'}>Front End Developer</Heading>
                     <Text color={'#6D7173'}>I am a Front end developer...</Text>
                     <ButtonGroup>
-                        <Button  as={motion.button}  whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>Hire me</Button>
-                        <Button  as={motion.button}  whileHover={{  color:'#0C7FB0' }} color={'#0C7FB0'} colorScheme='teal' variant='outline' >See Portfolio</Button>
+                        <a href="#contact">
+                        <Button  as={motion.button}  whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>
+                            Hire me
+                        </Button>
+                        </a>
+                        <a href="#proyectos">
+                        <Button  as={motion.button}  whileHover={{  color:'#0C7FB0' }} color={'#0C7FB0'} colorScheme='teal' variant='outline' >
+                            See Portfolio
+                        </Button>
+
+                        </a>
                     </ButtonGroup>
                     </VStack>
                     <HStack>
