@@ -50,6 +50,7 @@ const Contact = () => {
                     placeholder='Message'
                     height={100} 
                     width={450}
+                
                 />
                 <ValidationError
                     prefix="Message"
@@ -74,14 +75,14 @@ const Contact = () => {
         );
     }
     return (
-        <Container id='contact'>
-            <VStack>
+        <Container id='contact' >
+            <VStack >
                 <Text color={'#0C7FB0'}>Have something in your mind?</Text>
                 <Heading>Contact me</Heading> 
-                    <HStack >
-                        <ContactForm/>
-                        <Image src={Azul} />                   
-                    </HStack>
+                    <Stack gap={120} marginBottom={200} className='stackForm'>
+                        <ContactForm />
+       
+                    </Stack>
             </VStack>
         </Container>
     )

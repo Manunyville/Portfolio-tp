@@ -2,3 +2,13 @@
   background-color: #FFFFFF;
 color-scheme: #FFFFFF;
 }
+
+.imgAzul{
+  z-index: 9;
+}
+.stackForm{
+  background-image:url('../../assets/img/imgabstractaderecha.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin-left: 100px;
+}
