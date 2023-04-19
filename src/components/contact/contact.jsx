@@ -16,26 +16,26 @@ const Contact = () => {
         }
         return (
             <form action="https://formspree.io/f/mzbqknje" onSubmit={handleSubmit}>
-                <VStack>
+                <VStack gap='15px'>
                     <Input
                         id="text"
                         type="text"
                         name="text"
                         variant='filled'
-                        borderRadius={5}
+                        borderRadius='5px'
                         placeholder='Full name'
-                        padding={25}
-                        width={450}
+                        padding='25px'
+                        width='450px'
                     />
                     <Input
                         id="email"
                         type="email"
                         name="email"
                         variant='filled'
-                        borderRadius={5}
+                        borderRadius='5px'
                         placeholder='Email'
-                        padding={25}
-                        width={450}
+                        padding='25px'
+                        width='450px'
                     />
                     <ValidationError
                         prefix="Email"
@@ -46,10 +46,10 @@ const Contact = () => {
                         id="message"
                         name="message"
                         variant='filled'
-                        borderRadius={5}
+                        borderRadius='5px'
                         placeholder='Message'
-                        height={100}
-                        width={450}
+                        height='100px'
+                        width='450px'
 
                     />
                     <ValidationError
@@ -58,16 +58,16 @@ const Contact = () => {
                         errors={state.errors}
                     />
                 </VStack>
-                <VStack justify={'center'}>
+                <VStack justify={'center'} marginTop='15px'>
                     <Button type="submit" disabled={state.submitting}
-                        marginTop={4}
+                        
                         as={motion.button}
-                        width={150}
+                        width='150px'
                         whileHover={{ color: '#0C7FB0' }}
                         color={'#F9F9F9'}
                         bg={'#0C7FB0'}
-                        variant='solid'
-                        justifyContent={'center'}>
+                        variant='solid'>
+                        
                         Submit
                     </Button>
                 </VStack>
@@ -75,11 +75,11 @@ const Contact = () => {
         );
     }
     return (
-        <Container id='contact' >
-            <VStack >
+        <Container id='contact'width='full'>
+            <VStack gap='20px'>
                 <Text color={'#0C7FB0'}>Have something in your mind?</Text>
                 <Heading>Contact me</Heading>
-                <Stack gap={120} marginBottom={200} className='stackForm'>
+                <Stack >
                     <ContactForm />
 
                 </Stack>
