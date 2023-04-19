@@ -15,19 +15,21 @@ const Hero = () => {
 
     return (
 
-        <section id="hero">
-            <div className="divHero">
-                <HStack justify={'center'} gap={100} marginLeft={250}>
-                    <VStack justify={"space-around"} className="stackHero">
-                        <Stack marginRight={125}>
-                        <Text fontSize='xl' color={'#0C7FB0'}>Hello, I'm</Text>
+        <Container id="hero" width={"full"} margin="0">
+            <Stack  marginLeft="90px" gap="60px">
+                <HStack width="1200px" justifyContent="space-around" >
+                    <VStack>
+                        <Stack>
+                            <Text fontSize='xl' color={'#0C7FB0'}>Hello, I'm</Text>
 
-                        </Stack>
+                        
                         <Heading size={"lg"}>Manuel Nyville</Heading>
                         <Heading fontSize='xl' color={'#0C7FB0'} >Front End Developer</Heading>
                         <Text color={'#6D7173'}>I am a Front end developer...</Text>
+                        </Stack>
+
                         <ButtonGroup>
-                            <a href="#contact">
+                        <a href="#contact">
                                 <Button as={motion.button} whileHover={{ color: '#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>
                                     Hire me
                                 </Button>
@@ -36,59 +38,43 @@ const Hero = () => {
                                 <Button as={motion.button} whileHover={{ color: '#0C7FB0' }} color={'#0C7FB0'} colorScheme='teal' variant='outline' >
                                     See Portfolio
                                 </Button>
-
                             </a>
                         </ButtonGroup>
                     </VStack>
-                    <HStack>
-                        <VStack>
-                        <Stack>
-
-                            <Image src={Triangulo} w={1000} className="garabatos" marginLeft={150}/>
+                    <HStack >
+                        <Stack >
+                        <img src={Foto} className="fotoMia" />
                         </Stack>
-                            <Image src={Flecha} w={1000} className="garabatos" />
-
-                        </VStack>
-                       
-
-                            <img src={Foto} className="fotoMia" />
-                       
-                        
-                        <VStack>
-
-                            <Image src={Triangulo}  w={800} className="garabatos" marginRight={250} />
-                            <Image src={Circulo}  w={800} className="garabatos" marginRight={250}/>
-                        </VStack>
                     </HStack>
                 </HStack>
-                <Stack as={motion.div} whileHover={{ color: '#0C7FB0' }} justify={"space-around"} flexDirection={"row"} width={1100} margin={"0 auto"}>
-                    <Card as={motion.div} whileHover={{ scale: 1.2, color: '#0C7FB0' }} bg={'#F9F9F9'}>
-                        <CardHeader>
-                            <Heading size='md'> <RiMedalLine /> </Heading>
+                <Stack  justify={"space-evenly"} direction={"row"} width="1200px">
+                    <Card as={motion.div} whileHover={{ scale: 1.2, color: '#A7D1E3' }} bg={'#F9F9F9'} className="cardHero" >
+                        <CardHeader >
+                            <Heading size='md' className="imgHero"> <RiMedalLine /> </Heading>
                         </CardHeader>
                         <CardBody>
                             <Text>0 Awards</Text>
                         </CardBody>
                     </Card>
-                    <Card as={motion.div} whileHover={{ scale: 1.2, color: '#0C7FB0' }} bg={'#F9F9F9'}>
+                    <Card as={motion.div} whileHover={{ scale: 1.2, color: '#A7D1E3' }} bg={'#F9F9F9'} className="cardHero">
                         <CardHeader>
-                            <Heading size='md'>  <FaUsers /></Heading>
+                            <Heading size='md' className="imgHero">  <FaUsers /></Heading>
                         </CardHeader>
                         <CardBody>
                             <Text>10+ Clients</Text>
                         </CardBody>
                     </Card>
-                    <Card as={motion.div} whileHover={{ scale: 1.2, color: '#0C7FB0' }} bg={'#F9F9F9'}>
+                    <Card as={motion.div} whileHover={{ scale: 1.2, color: '#A7D1E3' }} bg={'#F9F9F9'}className="cardHero">
                         <CardHeader>
-                            <Heading size='md'> <FaAward /> </Heading>
+                            <Heading size='md' className="imgHero"> <FaAward /> </Heading>
                         </CardHeader>
                         <CardBody>
                             <Text>02 Months experience</Text>
                         </CardBody>
                     </Card>
-                    <Card as={motion.div} whileHover={{ scale: 1.3, color: '#0C7FB0' }} bg={'#F9F9F9'}>
+                    <Card as={motion.div} whileHover={{ scale: 1.3, color: '#A7D1E3' }} bg={'#F9F9F9'}className="cardHero">
                         <CardHeader>
-                            <Heading size='md'> <FaTrophy /> </Heading>
+                            <Heading size='md' className="imgHero"> <FaTrophy /> </Heading>
                         </CardHeader>
                         <CardBody>
                             <Text>+20 Proyects</Text>
@@ -96,9 +82,9 @@ const Hero = () => {
                     </Card>
 
                 </Stack>
-
-            </div>
-        </section>
+            </Stack>
+        </Container>
+    
     )
 }
 
