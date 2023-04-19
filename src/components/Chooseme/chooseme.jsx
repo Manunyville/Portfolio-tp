@@ -9,54 +9,53 @@ import equipo from '../../assets/img/teamplayer.png'
 const Choose = () => {
 
     return (
-        <Container width={1200} padding={10} id='eligeme'>
-            <VStack>
-                <VStack>
+
+        <Stack width="full">
+            <VStack width="1200px" margin="0 auto" gap="65px"  marginTop="10px">
+                <VStack justifyContent={'space-between'} marginTop="10px">
                     <Text color={'#0C7FB0'}>Why you should choose me</Text>
                     <Heading>Why choose me</Heading>
                 </VStack>
-                <HStack gap={75}>
-                    <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} marginLeft={5} alignItems={'center'} bg={'#F9F9F9'}  height={220} width={250}>
-
-                        <Image marginLeft={10} className='webImg' src={equipo} />
-
+                <HStack gap="85px">
+                    <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} className='cardsCh' bg={'#F9F9F9'} height="220px" width="250px">
+                        <Stack>
+                            <Image className='webImg' src={equipo}  />
+                        </Stack>
                         <CardBody>
-                            <Stack marginLeft={50} paddingY={2}>
+                            <Stack marginLeft="50px" paddingY="2px">
                                 <Heading size='md'> Team player</Heading>
                             </Stack>
                             <Text>Junto a otros desarrolladores nos divimos las tareas y debatimos ideas para crear una pagina con mayor criterio y objetividad</Text>
                         </CardBody>
 
                     </Card>
-                    <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} alignItems={'center'} marginLeft={5} bg={'#F9F9F9'}  height={220} width={250}>
-
-                        <Image marginLeft={10} className='webImg' src={Creativo} />
-
+                    <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} bg={'#F9F9F9'} className='cardsCh' height="220px" width="250px">
+                        <Stack>
+                             <Image  className='webImg' src={Creativo} />
+                        </Stack>
                         <CardBody>
-                            <Stack marginLeft={35} paddingY={2}>
-                                <Heading size='md'>Creative design</Heading>
-
+                            <Stack marginLeft="50px" paddingY="2px">
+                                <Heading size='md'> Creative design</Heading>
                             </Stack>
                             <Text>Desarrollo ideas creativas tanto en el diseño de la applicacion web como en su funcionamiento.</Text>
                         </CardBody>
-
                     </Card>
-                    <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} bg={'#F9F9F9'} marginLeft={5} alignItems={'center'} height={220} width={250}>
-
-                        <Image marginLeft={10} className='webImg' src={Web} />
-
+                    <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} bg={'#F9F9F9'} className='cardsCh' height="220px" width="250px">
+                        <Stack>
+                            <Image  className='webImg' src={Web} />
+                        </Stack>
                         <CardBody>
-                            <Stack marginLeft={50} paddingY={2} >
-                                <Heading size='md'> Responsive </Heading>
-
+                            <Stack marginLeft="50px" paddingY="2px">
+                                <Heading size='md'>Responsive</Heading>
                             </Stack>
-                            <Text>Entrego las applicaciones webs/paginas webs antes del tiempo estipulado.</Text>
+                            <Text>Entrego las applicaciones webs/paginas webs antes del tiempo estipulado</Text>
                         </CardBody>
 
                     </Card>
                 </HStack>
             </VStack>
-        </Container>
+        </Stack>
+
     )
 }
 export default Choose
