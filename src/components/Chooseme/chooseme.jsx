@@ -10,16 +10,16 @@ const Choose = () => {
 
     return (
 
-        <Stack width="full">
-            <VStack width="1200px" margin="0 auto" gap="65px"  marginTop="10px">
-                <VStack justifyContent={'space-between'} marginTop="10px">
+        <Stack width="full" marginTop="10px">
+            <VStack width="1200px" margin="0 auto" gap="55px" marginTop="10px">
+                <VStack justifyContent={'space-between'} >
                     <Text color={'#0C7FB0'}>Why you should choose me</Text>
                     <Heading>Why choose me</Heading>
                 </VStack>
                 <HStack gap="85px">
                     <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} className='cardsCh' bg={'#F9F9F9'} height="220px" width="250px">
                         <Stack>
-                            <Image className='webImg' src={equipo}  />
+                            <Image className='imgWeb' src={equipo} />
                         </Stack>
                         <CardBody>
                             <Stack marginLeft="50px" paddingY="2px">
@@ -31,7 +31,7 @@ const Choose = () => {
                     </Card>
                     <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} bg={'#F9F9F9'} className='cardsCh' height="220px" width="250px">
                         <Stack>
-                             <Image  className='webImg' src={Creativo} />
+                             <Image  className='imgWeb' src={Creativo} />
                         </Stack>
                         <CardBody>
                             <Stack marginLeft="50px" paddingY="2px">
@@ -42,7 +42,7 @@ const Choose = () => {
                     </Card>
                     <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} bg={'#F9F9F9'} className='cardsCh' height="220px" width="250px">
                         <Stack>
-                            <Image  className='webImg' src={Web} />
+                            <Image  className='imgWeb' src={Web} />
                         </Stack>
                         <CardBody>
                             <Stack marginLeft="50px" paddingY="2px">
@@ -55,6 +55,8 @@ const Choose = () => {
                 </HStack>
             </VStack>
         </Stack>
+
+       
 
     )
 }

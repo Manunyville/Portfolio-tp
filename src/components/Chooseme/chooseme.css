@@ -2,10 +2,14 @@
     padding: 0px;
     margin: 0px;
 }
-.webImg{
-   position: absolute;
-   bottom: 200px;
-   background-color: #FFFFFF;
+.imgWeb{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 200px;
+    left: 75px;
+    background-color: #FFFFFF;
 }
 .cardsCh{
     position: relative;
