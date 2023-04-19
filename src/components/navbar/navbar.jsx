@@ -8,13 +8,13 @@ const Navbar = () => {
 
 
     return (
-        <Container width={1200}>
-            <Flex justify={'center'} padding={30} >
-                <nav >
-                    <HStack gap={500} >
-                        <div>
-                            <Heading color={'#0C7FB0'} size='md'><strong>Portfolio</strong></Heading>
-                        </div>
+        <Container width={"full"} >
+            <Stack  padding="15px">
+                <nav>
+                    <HStack gap="500px" justify={'center'}>
+                        <Stack>
+                            <Heading color={'#0C7FB0'} size='lg' >Portfolio</Heading>
+                        </Stack>
                         <ButtonGroup spacing='25'>
                             <a href="#hero">
 
@@ -48,8 +48,10 @@ const Navbar = () => {
                             </a>
                         </ButtonGroup>
                     </HStack>
+                    <hr />
                 </nav>
-            </Flex >
+
+            </Stack>
         </Container>
     )
 
