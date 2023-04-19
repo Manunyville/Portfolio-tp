@@ -31,8 +31,8 @@ const Testimonial = () => {
                             </HStack>
 
                             <CardBody>
-                                <Heading size='md' marginLeft={95}> Camila Moncada</Heading>
-                                <Image src={Five} marginLeft={125} className='fiveStars' />
+                                <Heading size='md' marginLeft={75}> Camila Moncada</Heading>
+                                <Image src={Five} marginLeft={100} className='fiveStars' />
                                 <Text>Manuel realiza trabajos muy buenos, todos fueron entregados en tiempo y forma; ademas trabaja muy bien con su equipo, sin duda volveria a contratarlos</Text>
                             </CardBody>
 
@@ -44,8 +44,8 @@ const Testimonial = () => {
                                 <Image src={Comillas} w={100} />
                             </HStack>
                             <CardBody justifyContent={'center'}>
-                                <Heading size='md' marginLeft={95}>Lukas Olthoff</Heading>
-                                <Image src={Five} className='fiveStars' marginLeft={125} />
+                                <Heading size='md' marginLeft={75}>Lukas Olthoff</Heading>
+                                <Image src={Five} className='fiveStars' marginLeft={100} />
 
                                 <Text>Los trabajos realizados por Manuel fueron increibles, mucha responsabilidad de su parte y siempre muy creativo!</Text>
                             </CardBody>
@@ -59,8 +59,8 @@ const Testimonial = () => {
 
                             </HStack>
                             <CardBody justify={'center'}>
-                                <Heading size='md' marginLeft={75}>Marcos Servezinski </Heading>
-                                <Image src={Five} className='fiveStars' marginLeft={125} />
+                                <Heading size='md' marginLeft={55}>Marcos Servezinski </Heading>
+                                <Image src={Five} className='fiveStars' marginLeft={100} />
 
                                 <Text>Los trabajos que Manuel ha hecho son muy ingenios, las ideas que yo le dije el las tranformo tal cual yo me las imaginaga!</Text>
                             </CardBody>
