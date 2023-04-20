@@ -16,10 +16,10 @@ const Testimonial = () => {
 
     return (
 
-        <Stack id='testimonios' width={'full'} margin="0 auto" marginLeft="105px">
-            <VStack width="1200px" gap="45px" marginLeft="70px">
+        <Stack id='testimonios' width={'full'} margin="0 auto">
+            <VStack   gap="45px" marginLeft="70px">
                 <VStack>
-                    <Text color={'#0C7FB0'}>Client's feedback</Text>
+                    <Text color={'#0C7FB0'} marginTop="20px">Client's feedback</Text>
                     <HStack>
                         <Image src={Azul} className='imgabstractaFeed' />
                     </HStack>

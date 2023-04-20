@@ -10,13 +10,13 @@ const Choose = () => {
 
     return (
 
-        <Stack width="full" marginTop="10px">
-            <VStack width="1200px" margin="0 auto" gap="55px" marginTop="10px">
+        <Stack width="full" marginTop="10px" id='eligeme'>
+            <VStack width="1200px" margin="0 auto" gap="55px" marginTop="10px" marginRight="0 auto">
                 <VStack justifyContent={'space-between'} >
                     <Text color={'#0C7FB0'}>Why you should choose me</Text>
                     <Heading>Why choose me</Heading>
                 </VStack>
-                <HStack gap="85px">
+                <HStack gap="85px" >
                     <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} className='cardsCh' bg={'#F9F9F9'} height="220px" width="250px">
                         <Stack>
                             <Image className='imgWeb' src={equipo} />

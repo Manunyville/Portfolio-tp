@@ -9,7 +9,7 @@ import Azderecha from '../../assets/img/imgabstractaderecha.png'
 const Portfolio = () =>{
 
     return(
-        <Container width={1200} id='proyectos'>
+        <Container width='1200px' id='proyectos'>
             <VStack >
                 <VStack>
                     <Stack >
@@ -18,46 +18,48 @@ const Portfolio = () =>{
                     <Text color={'#0C7FB0'}>Recent projects</Text>
                     <Heading>My Portfolio</Heading>
                 </VStack>
-                <HStack gap={75}>
-                    <Card width={270} height={350} bg={'#F9F9F9'} marginLeft={10}>
+                <HStack gap='75px'>
+                    <Card width='270px' height='350px' bg={'#F9F9F9'} marginLeft='10px'>
                         <CardHeader>
 
-                        <Image src={Fotaki} height={150}/>
+                        <Image src={Fotaki} height='150px'/>
                         <Heading size='md'> Twitter clon</Heading>
                         </CardHeader>
                         <CardBody>
                         <Text>Is a Twitter profile as you were Messi</Text>
-                            <Button  marginTop={4} as={motion.button} paddingX={65} whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>View on github</Button>
+                            <Button  marginTop='4px'as={motion.button} paddingX={65} whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>View on github</Button>
                         </CardBody>
                        
                         
                     </Card>
-                    <Card width={270} height={350} bg={'#F9F9F9'} marginLeft={10}>
+                    <Card width='270px' height='350px' bg={'#F9F9F9'} marginLeft='10px'>
+
                         <CardHeader>
-                        <Image src={Fotaki} height={150}/>
+                        <Image src={Fotaki} height='150px'/>
                         <Heading size='md'> Forniture web</Heading>
                         </CardHeader>
                         <CardBody>
                         <Text>I create a web page for a forniture market</Text>
-                            <Button marginTop={4} as={motion.button} paddingX={65} whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>View on github</Button>
+                            <Button marginTop='4px' as={motion.button} paddingX='65px' whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>View on github</Button>
                         </CardBody>
                        
                         
                     </Card>
-                    <Card width={270} height={350} bg={'#F9F9F9'} marginLeft={10}>
+                    <Card width='270px' height='350px' bg={'#F9F9F9'} marginLeft='10px'>
+
                         <CardHeader>
-                        <Image src={Fotaki} height={150}/>
+                        <Image src={Fotaki} height='150px'/>
                         <Heading size='md'> Hotel page</Heading>
                         </CardHeader>
                         <CardBody>
                         <Text>I create a page design for a hotel in Mar del plata.</Text>
-                            <Button marginTop={4} as={motion.button} paddingX={65} whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>View on github</Button>
+                            <Button marginTop='4px' as={motion.button} paddingX='65px' whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>View on github</Button>
                         </CardBody> 
                         
                     </Card>
                 </HStack>
                 <Stack>
-                    <Button marginTop={4} as={motion.button} paddingX={10} whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'> View All</Button>
+                    <Button marginTop='4px' as={motion.button} paddingX='10px'whileHover={{  color:'#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'> View All</Button>
                 </Stack>
             </VStack>
         </Container>
