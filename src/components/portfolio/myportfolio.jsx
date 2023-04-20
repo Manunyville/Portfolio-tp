@@ -2,23 +2,23 @@ import './myportfolio.css'
 import React from 'react'
 import { Stack, HStack, VStack, Flex, Button, Image, Text, Container, Heading, Card, CardHeader, CardBody, CardFooter,} from '@chakra-ui/react'
 import { motion } from "framer-motion"
-import Fotaki from '../../assets/img/fotoabout.png'
+import Fotaki from '../../assets/img/codigoweb.png'
 import Azderecha from '../../assets/img/imgabstractaderecha.png'
 
 
 const Portfolio = () =>{
 
     return(
-        <Container width='1200px' id='proyectos'>
+        <Container id='proyectos'  width="full">
             <VStack >
                 <VStack>
-                    <Stack >
-                        <Image src={Azderecha} className='imgAbs' marginLeft="800px"/>
-                    </Stack>
+                    <HStack width="full">
+                        <Image src={Azderecha} className='imgAbs'/>
+                    </HStack>
                     <Text color={'#0C7FB0'}>Recent projects</Text>
                     <Heading>My Portfolio</Heading>
                 </VStack>
-                <HStack gap='75px'>
+                <HStack gap='75px' className='stackPortfolio'>
                     <Card width='270px' height='350px' bg={'#F9F9F9'} marginLeft='10px'>
                         <CardHeader>
 

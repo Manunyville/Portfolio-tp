@@ -1,11 +1,8 @@
 import React from "react";
-import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Heading, Image, Card, CardHeader, CardBody, Container } from '@chakra-ui/react'
+import { Stack, HStack, VStack, Button, ButtonGroup, Text, Heading, Image, Card, CardHeader, CardBody, Container } from '@chakra-ui/react'
 import './hero.css'
 import Foto from '../../assets/img/fotomiafondorenovado.png'
 import { motion } from "framer-motion"
-import Flecha from '../../assets/img/flecha.png'
-import Triangulo from '../../assets/img/triangulo.png'
-import Circulo from '../../assets/img/circulo.png'
 import { RiMedalLine } from "react-icons/ri";
 import { FaAward, FaUsers, FaTrophy } from "react-icons/fa";
 
@@ -72,7 +69,7 @@ const Hero = () => {
                             <Text>02 Months experience</Text>
                         </CardBody>
                     </Card>
-                    <Card as={motion.div} whileHover={{ scale: 1.3, color: '#A7D1E3' }} bg={'#F9F9F9'}className="cardHero">
+                    <Card as={motion.div} whileHover={{ scale: 1.2, color: '#A7D1E3' }} bg={'#F9F9F9'}className="cardHero">
                         <CardHeader>
                             <Heading size='md' className="imgHero"> <FaTrophy /> </Heading>
                         </CardHeader>
