@@ -10,13 +10,13 @@ const Choose = () => {
 
     return (
 
-        <Stack width={{xl:"full", md:'600px', sm:'300px'}} marginTop="10px" id='eligeme'>
+        <Stack width={{xl:"full"}} marginTop="10px" id='eligeme'>
             <VStack width={'1200px'} margin="0 auto" gap="55px" marginTop="10px" marginRight="0 auto" flexDirection={{xl:'column', md:'row',sm:'row'}}>
                 <VStack justifyContent={'space-between'} >
-                    <Text color={'#0C7FB0'} fontSize={{xl: '15px', md: '10px',sm:'5px' }}>Why you should choose me</Text>
-                    <Heading fontSize={{ xl: '20px', md: '10px',sm:'5px' }}>Why choose me</Heading>
+                    <Text color={'#0C7FB0'} fontSize={{xl: '15px' }}>Why you should choose me</Text>
+                    <Heading fontSize={{ xl: '20px' }}>Why choose me</Heading>
                 </VStack>
-                <Flex gap="85px" flexDirection={{xl:'row', md:'column',sm:'column'}}>
+                <Flex gap="85px" flexDirection={{xl:'row', }}>
                     <Card as={motion.div} 
                     whileHover={{ scale: 1.1, color: '#0C7FB0' }} 
                     className='cardsCh' bg={'#F9F9F9'} 
