@@ -29,7 +29,7 @@ const Testimonial = () => {
                     </Stack>
                 </VStack>
                 <HStack gap="30px" className='stackFeed' marginLeft="45px" margin="0 auto">
-                <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} className='cardsFeedback' bg={'#F9F9F9'} width='300px' height='300px'>
+                    <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} className='cardsFeedback' bg={'#F9F9F9'} width='300px' height='300px'>
                         <HStack gap={10}>
                             <Image className='imgFeed' src={cami} />
                             <Image src={Comillas} w='100px' className='comillasfeed' />
@@ -65,17 +65,19 @@ const Testimonial = () => {
                             <Text>Los trabajos que Manuel ha hecho son muy ingenios, las ideas que yo le dije el las tranformo tal cual yo me las imaginaga!</Text>
                         </CardBody>
                     </Card>
-                    
-                </HStack>
-                <HStack>
 
-                <Button as={motion.button} borderRadius='50%' bg={'#F9F9F9'} size='xs' whileHover={{ backgroundColor: '#0C7FB0' }}></Button>
-                <Button as={motion.button} borderRadius='50%' bg={'#F9F9F9'} size='xs' whileHover={{ backgroundColor: '#0C7FB0' }}> </Button>
-                <Button as={motion.button} borderRadius='50%' bg={'#F9F9F9'} size='xs' whileHover={{ backgroundColor: '#0C7FB0' }}></Button>
-            </HStack>
-            <Stack>
-                <Button>View all</Button>
-            </Stack>
+                </HStack>
+                <VStack gap="15px">
+                    <HStack justify={'space-around'}>
+
+                        <Button as={motion.button} borderRadius='50%' bg={'#F9F9F9'} size='xs' whileHover={{ backgroundColor: '#0C7FB0' }}></Button>
+                        <Button as={motion.button} borderRadius='50%' bg={'#F9F9F9'} size='xs' whileHover={{ backgroundColor: '#0C7FB0' }}> </Button>
+                        <Button as={motion.button} borderRadius='50%' bg={'#F9F9F9'} size='xs' whileHover={{ backgroundColor: '#0C7FB0' }}></Button>
+                    </HStack>
+                    <VStack>
+                        <Button arginTop='4px' as={motion.button} paddingX='10px' whileHover={{ color: '#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>View all</Button>
+                    </VStack>
+                </VStack>
             </VStack>
         </Stack >
 

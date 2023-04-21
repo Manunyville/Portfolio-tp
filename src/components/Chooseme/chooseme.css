@@ -3,14 +3,13 @@
     margin: 0px;
 }
 .imgWeb{
-    height: 80px;
-    width: 80px;
+   
     border-radius: 50%;
     position: absolute;
-    bottom: 200px;
-    left: 75px;
+    
     background-color: #FFFFFF;
 }
 .cardsCh{
     position: relative;
+   
 }

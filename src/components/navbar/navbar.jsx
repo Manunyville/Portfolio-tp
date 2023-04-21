@@ -11,7 +11,8 @@ const Navbar = () => {
         <Container width={"full"} >
             <Stack  padding="15px">
                 <nav>
-                    <HStack gap="500px" justify={'center'}>
+                    <HStack gap={{xl:"500px", md:"50px",sm:"10px"}} 
+                    justify={'center'} >
                         <Stack>
                             <Heading color={'#0C7FB0'} size='lg' >Portfolio</Heading>
                         </Stack>

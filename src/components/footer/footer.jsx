@@ -108,6 +108,10 @@ const Footer = () => {
                         </a>
                     </Button>
                 </VStack>
+
+            </HStack>
+            <HStack justify="center" >
+                <Text>Copyright 2023 Inc. All rights reserved. | Terms of Use | Updated Privacy Policy | Accessibility</Text>
             </HStack>
         </Stack>
        
