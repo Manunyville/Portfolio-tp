@@ -11,14 +11,14 @@ const About = () => {
         <Stack id='about' bg={'#F9F9F9'}>
             <HStack
               
-
+               
                 gap={{ xl: "40px", md: '75px', sm: '45px', base: '15px' }}
                 marginLeft={{ '2xl': '50px', xl: "40px", md: '110px', sm: '55px', base: '0px' }}
                 marginTop="15px"
                 flexDirection={{ xl: 'row', md: 'row', sm: 'column', base: 'column' }}>
 
 
-                <HStack
+                <HStack height={{'2xl':'650px',xl:'475px',md:'320px',xs:'270px'}}
                     width={{ '2xl': 'full', xl: "1200px", md: '800px', sm: '450px', base: '250px' }}
                     justify={'center'}>
                     <Image src={Foto}

@@ -17,9 +17,11 @@ const Hero = () => {
          //   marginLeft={{'2xl':'0px',xl:"20px",md:'110px',sm:'55px',base:'0px'}} 
             gap={ "60px"}>
                 <HStack 
+                marginLeft={{xl:'65px', "2xl":'0'}}
+                margin={"0 auto"}
                 width={{ '2xl':'1800px', xl:'1200px',lg:'800px', md:'600px', sm:'300px'}} 
-                justifyContent="space-around"
-                gap={{"2xl":'0px'}}
+                justifyContent={{xl:"space-around", "2xl":'space-evenly'}}
+                gap={{xl:'200px'}}
                 >
                     <VStack>
                         <Stack>
@@ -58,7 +60,7 @@ const Hero = () => {
                 </HStack>
                 <Stack  justify={"space-evenly"} 
                 direction={{xl:"row", md:'row',sm:'column',base:'column'}} 
-              width={{xl:"1200px",'2xl':'1800px',md:'800px',sm:'600px',base:'300px' }}
+              width={{xl:"1000px",'2xl':'1600px',md:'800px',sm:'600px',base:'300px' }}
                 >
                     <Card as={motion.div} 
                     whileHover={{ scale: 1.2, color: '#A7D1E3' }} 
