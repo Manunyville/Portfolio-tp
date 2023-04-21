@@ -14,7 +14,7 @@ const Hero = () => {
 
         <Container id="hero" width={"full"} margin="0">
             <Stack  marginLeft="90px" gap="60px">
-                <HStack width="1200px" justifyContent="space-around" >
+                <HStack width={{xl:'1200px', md:'600px', sm:'300px'}} justifyContent="space-around" >
                     <VStack>
                         <Stack>
                             <Text fontSize='xl' color={'#0C7FB0'}>Hello, I'm</Text>
@@ -38,14 +38,22 @@ const Hero = () => {
                             </a>
                         </ButtonGroup>
                     </VStack>
-                    <HStack >
+                      
+                    <HStack width={{md:'350px',xl:'450px'}}>
                         <Stack >
-                        <img src={Foto} className="fotoMia" />
+                        <Image src={Foto} 
+                        className="fotoMia" 
+                        width={{md:'225px',xl:'450px', sm:'100px',base:'50px'}}
+                        height={{md:'225px',xl:'450px', sm:'100px',base:'50px'}}/>
+                        
                         </Stack>
                     </HStack>
                 </HStack>
-                <Stack  justify={"space-evenly"} direction={"row"} width="1200px">
-                    <Card as={motion.div} whileHover={{ scale: 1.2, color: '#A7D1E3' }} bg={'#F9F9F9'} className="cardHero" >
+                <Stack  justify={"space-evenly"} direction={{xl:"row", md:'column',sm:'column',base:'column'}} width="1200px">
+                    <Card as={motion.div} 
+                    hileHover={{ scale: 1.2, color: '#A7D1E3' }} 
+                    bg={'#F9F9F9'} 
+                    className="cardHero" >
                         <CardHeader >
                             <Heading size='md' className="imgHero"> <RiMedalLine /> </Heading>
                         </CardHeader>
@@ -53,7 +61,10 @@ const Hero = () => {
                             <Text>0 Awards</Text>
                         </CardBody>
                     </Card>
-                    <Card as={motion.div} whileHover={{ scale: 1.2, color: '#A7D1E3' }} bg={'#F9F9F9'} className="cardHero">
+                    <Card as={motion.div} 
+                    whileHover={{ scale: 1.2, color: '#A7D1E3' }} 
+                    bg={'#F9F9F9'} 
+                    className="cardHero">
                         <CardHeader>
                             <Heading size='md' className="imgHero">  <FaUsers /></Heading>
                         </CardHeader>
@@ -61,7 +72,10 @@ const Hero = () => {
                             <Text>10+ Clients</Text>
                         </CardBody>
                     </Card>
-                    <Card as={motion.div} whileHover={{ scale: 1.2, color: '#A7D1E3' }} bg={'#F9F9F9'}className="cardHero">
+                    <Card as={motion.div} 
+                    whileHover={{ scale: 1.2, color: '#A7D1E3' }} 
+                    bg={'#F9F9F9'}
+                    className="cardHero">
                         <CardHeader>
                             <Heading size='md' className="imgHero"> <FaAward /> </Heading>
                         </CardHeader>
@@ -69,7 +83,10 @@ const Hero = () => {
                             <Text>02 Months experience</Text>
                         </CardBody>
                     </Card>
-                    <Card as={motion.div} whileHover={{ scale: 1.2, color: '#A7D1E3' }} bg={'#F9F9F9'}className="cardHero">
+                    <Card as={motion.div} 
+                    whileHover={{ scale: 1.2, color: '#A7D1E3' }} 
+                    bg={'#F9F9F9'}
+                    className="cardHero">
                         <CardHeader>
                             <Heading size='md' className="imgHero"> <FaTrophy /> </Heading>
                         </CardHeader>
