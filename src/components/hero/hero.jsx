@@ -14,9 +14,11 @@ const Hero = () => {
 
         <Container id="hero" width={"full"} margin="0">
             <Stack 
-         //   marginLeft={{'2xl':'0px',xl:"20px",md:'110px',sm:'55px',base:'0px'}} 
+           marginLeft={{'2xl':'200px',xl:"20px",md:'110px',sm:'55px',base:'0px'}} 
             gap={ "60px"}
-            justify={"center"}>
+            justify={"center"}
+            
+            >
                 <HStack 
                 marginLeft={{xl:'65px', "2xl":'0'}}
                 margin={"0 auto"}
