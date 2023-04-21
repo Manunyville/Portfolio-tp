@@ -76,8 +76,11 @@ const Contact = () => {
     }
     return (
         <Container id='contact'width='full'>
-            <VStack gap='20px'>
+            <VStack gap='20px' className='stackForm'>
                 <Text color={'#0C7FB0'}>Have something in your mind?</Text>
+                <Stack>
+                    <Image src={Azul} className='imgContactoAzul'/>
+                </Stack>
                 <Heading>Contact me</Heading>
                 <Stack >
                     <ContactForm />
