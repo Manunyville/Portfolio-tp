@@ -47,9 +47,9 @@ const Testimonial = () => {
                             <Image src={Comillas} w='100px' />
                         </HStack>
                         <CardBody className='cardsFeedback'>
-                            <Heading size='md'>Lukas Olthoff</Heading>
+                            <Heading size='md'>Lucas Quintero</Heading>
                             <Image src={Five} className='fiveStars' />
-                            <Text>Los trabajos realizados por Manuel fueron increibles, mucha responsabilidad de su parte y siempre muy creativo!</Text>
+                            <Text>Manuel se encargo de la promocion de mis productos materos y se dispararon las ventas!</Text>
                         </CardBody>
                     </Card>
 
@@ -60,9 +60,9 @@ const Testimonial = () => {
 
                         </HStack>
                         <CardBody className='cardsFeedback'>
-                            <Heading size='md'>Marcos Servezinski </Heading>
+                            <Heading size='md'>Marcos Servezynski </Heading>
                             <Image src={Five} className='fiveStars' />
-                            <Text>Los trabajos que Manuel ha hecho son muy ingenios, las ideas que yo le dije el las tranformo tal cual yo me las imaginaga!</Text>
+                            <Text>Los trabajos que Manuel ha hecho son muy ingeniosos, las ideas que yo le dije el las tranformo tal cual yo me las imaginaba!</Text>
                         </CardBody>
                     </Card>
 

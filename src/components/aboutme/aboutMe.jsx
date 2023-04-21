@@ -25,7 +25,7 @@ const About = () => {
                         <Heading fontSize={{xl:'45px',md:'35px',sm:'20px',base:'5px'}}>About me</Heading>
                         <Heading fontSize={{xl:'30px',md:'20px',sm:'10px',base:'5px'}} 
                         color={'#6D7173'}> 02 Meses de experiencia en desarrolo Front end</Heading>
-                        <Text color={'#6D7173'} fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Hola, yo soy Manuel, un desarrollador Front end, me encargo del desarrollo de paginas web y aplicaciones web de acuerdo a lo que el cliente proponga. Transformo ideas complicadas en proyecto faciles de usar. </Text>
+                        <Text color={'#6D7173'} fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Hola, yo soy Manuel, un desarrollador Front end, me encargo del desarrollo de paginas web y aplicaciones web de acuerdo a lo que el cliente proponga. soy creador de contenido, realizo tanto filmaciones como fotografias para la promocion e impulsion de productos, tambien me encargo de la edicion de estos. </Text>
                     </Stack>
                 </VStack>
 

@@ -25,14 +25,14 @@ const Services = () =>{
                     <Card  className='cardServ' 
                     bg={'#F9F9F9'} 
                     height="150px" 
-                    width={{xl:"220px", md:'150px',sm:'90px',base:'40px'}}>
+                    width={{xl:"220px", md:'150px',sm:'100px',base:'80px'}}>
                         <Stack>
                             <Image  className='webImg' 
                             src={Web}
                             width={{xl:'70px',md:'55px', sm:'35px',base:'15px'}} 
                             height= {{xl:'80px',md:'65px', sm:'45px', base:'25px'}}
-                            left={{xl:'75px',md:'50px',sm:'28px',base:'12px'}} 
-                            bottom={{xl:'125px',md:'125px',sm:'125px',base:'95px'}}/>
+                            left={{xl:'75px',md:'50px',sm:'32px',base:'32px'}} 
+                            bottom={{xl:'125px',md:'125px',sm:'105px',base:'85px'}}/>
                         </Stack>                     
                         <CardBody>
                         <Heading fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}> Website developement </Heading>
@@ -42,14 +42,14 @@ const Services = () =>{
                     <Card  className='cardServ' 
                     bg={'#F9F9F9'} 
                     height="150px"  
-                    width={{xl:"220px", md:'150px',sm:'90px',base:'40px'}}>
+                    width={{xl:"220px", md:'150px',sm:'100px',base:'80px'}}>
                         <Stack>
                             <Image  className='webImg' 
                             src={Diseñoweb}
                             width={{xl:'70px',md:'55px', sm:'35px',base:'15px'}} 
                             height= {{xl:'80px',md:'65px', sm:'45px', base:'25px'}}
-                            left={{xl:'75px',md:'50px',sm:'28px',base:'12px'}} 
-                            bottom={{xl:'125px',md:'125px',sm:'125px',base:'115px'}}/>
+                            left={{xl:'75px',md:'50px',sm:'32px',base:'30px'}} 
+                            bottom={{xl:'125px',md:'125px',sm:'85px',base:'70px'}}/>
                         </Stack>
                         <CardBody>
                         <Heading fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Website design</Heading>
@@ -59,14 +59,14 @@ const Services = () =>{
                     <Card bg={'#F9F9F9'}  
                     className='cardServ' 
                     height="150px"  
-                    width={{xl:"220px", md:'150px',sm:'90px',base:'40px'}} >
+                    width={{xl:"220px", md:'150px',sm:'100px',base:'80px'}} >
                         <Stack>
                             <Image  className='webImg' 
                             src={diseño}
                             width={{xl:'70px',md:'55px', sm:'35px',base:'15px'}} 
                             height= {{xl:'80px',md:'65px', sm:'45px', base:'25px'}}
-                            left={{xl:'75px',md:'50px',sm:'28px',base:'12px'}} 
-                            bottom={{xl:'125px',md:'125px',sm:'125px',base:'115px'}}/>
+                            left={{xl:'75px',md:'50px',sm:'32px',base:'32px'}} 
+                            bottom={{xl:'125px',md:'125px',sm:'115px',base:'75px'}}/>
                         </Stack>
                         <CardBody>
                             <Heading fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Content creation </Heading>
