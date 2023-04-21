@@ -5,7 +5,8 @@ import { motion } from "framer-motion"
 import Fotaki from '../../assets/img/codigoweb.png'
 import Azderecha from '../../assets/img/imgabstractaderecha.png'
 import Deluxe from '../../assets/img/promoTorpedo.png'
-
+import Portafolio from '../../assets/img/portfolioV1.jpeg'
+import Hotel from '../../assets/img/Hotelpagina.jpeg'
 
 const Portfolio = () => {
 
@@ -30,7 +31,7 @@ const Portfolio = () => {
                     alignItems={'center'}>
                         <CardHeader>
 
-                            <Image src={Fotaki} 
+                            <Image src={Portafolio} 
                             height={{xl:'150px',md:'100px',sm:'70px',base:'30px'}} />
                             <Heading fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}> Portfolio V1</Heading>
                         </CardHeader>
@@ -58,12 +59,12 @@ const Portfolio = () => {
                      alignItems={'center'}>
 
                         <CardHeader>
-                            <Image src={Fotaki}
+                            <Image src={Hotel}
                               height={{xl:'150px',md:'100px',sm:'70px',base:'30px'}} />
-                            <Heading fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}> Forniture web</Heading>
+                            <Heading fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}> Hotel web page</Heading>
                         </CardHeader>
                         <CardBody>
-                            <Text fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>I create a web page for a forniture market</Text>
+                            <Text fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Es una pagina creada para un hotel turistico</Text>
                             <Button marginTop='4px'
                                 as={motion.button}
                                 paddingX={{xl:'65px',md:'35px',sm:'10px'}}

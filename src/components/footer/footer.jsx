@@ -118,7 +118,7 @@ const Footer = () => {
                         </a>
                     </Button>
                     <Button as={motion.button} whileHover={{ scale: 1.2 }} colorScheme='teal' variant={'ghost'}>
-                        <a href="https://www.instagram.com/manunyville/?hl=es-la">
+                        <a href="https://www.instagram.com/bombillaloca/?hl=es-la">
                             <AiFillInstagram />
                         </a>
                     </Button>
