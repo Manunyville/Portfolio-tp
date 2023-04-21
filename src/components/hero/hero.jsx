@@ -15,7 +15,8 @@ const Hero = () => {
         <Container id="hero" width={"full"} margin="0">
             <Stack 
          //   marginLeft={{'2xl':'0px',xl:"20px",md:'110px',sm:'55px',base:'0px'}} 
-            gap={ "60px"}>
+            gap={ "60px"}
+            justify={"center"}>
                 <HStack 
                 marginLeft={{xl:'65px', "2xl":'0'}}
                 margin={"0 auto"}
@@ -50,17 +51,21 @@ const Hero = () => {
                     <HStack width={{md:'350px',xl:'450px'}}>
                         <Stack >
                         <Image 
-                        src={Foto} 
+                        src={Foto}
+                        left= {{xl:'60px',"2xl":'80px',md:'55px'}} 
+                        bottom={{xl:'115px'}}  
                         className="fotoMia" 
-                        width={{md:'225px',xl:'350px', sm:'100px',base:'50px'}}
-                        height={{md:'225px',xl:'350px', sm:'100px',base:'50px'}}/>
+                        width={{md:'225px',xl:'350px', sm:'100px',base:'70px'}}
+                        height={{md:'225px',xl:'350px', sm:'100px',base:'70px'}}/>
                         
                         </Stack>
                     </HStack>
                 </HStack>
-                <Stack  justify={"space-evenly"} 
+                <Stack  
+                justify={{xl:"space-evenly", "2xl":'space-evenly'} }
                 direction={{xl:"row", md:'row',sm:'column',base:'column'}} 
-              width={{xl:"1000px",'2xl':'1600px',md:'800px',sm:'600px',base:'300px' }}
+                width={{xl:"1000px",'2xl':'1400px',md:'800px',sm:'600px',base:'300px' }}
+                marginLeft={{"xl":'1000px'}}
                 >
                     <Card as={motion.div} 
                     whileHover={{ scale: 1.2, color: '#A7D1E3' }} 
