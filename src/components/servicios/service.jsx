@@ -1,7 +1,6 @@
 import './service.css'
 import React from 'react'
-import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Container, Heading, Image, Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
-import { motion } from "framer-motion"
+import { Stack, HStack, VStack, Text, Container, Heading, Image, Card, CardBody,  } from '@chakra-ui/react'
 import Web from '../../assets/img/codigoweb.png'
 import diseño from '../../assets/img/Diseñodepagina.png'
 import Diseñoweb from '../../assets/img/desarrolloweb.png'

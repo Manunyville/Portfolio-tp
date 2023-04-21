@@ -1,8 +1,7 @@
 import './myportfolio.css'
 import React from 'react'
-import { Stack, HStack, VStack, Flex, Button, Image, Text, Container, Heading, Card, CardHeader, CardBody, CardFooter, } from '@chakra-ui/react'
+import { Stack, HStack, VStack, Button, Image, Text, Container, Heading, Card, CardHeader, CardBody, } from '@chakra-ui/react'
 import { motion } from "framer-motion"
-import Fotaki from '../../assets/img/codigoweb.png'
 import Azderecha from '../../assets/img/imgabstractaderecha.png'
 import Deluxe from '../../assets/img/promoTorpedo.png'
 import Portafolio from '../../assets/img/portfolioV1.jpeg'

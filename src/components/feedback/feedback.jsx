@@ -1,16 +1,14 @@
 import './feedback.css'
 import React from 'react'
-import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Container, Heading, Image, Card, CardHeader, CardBody, } from '@chakra-ui/react'
+import { Stack, HStack, VStack, Button, Text, Heading, Image, Card, CardBody, } from '@chakra-ui/react'
 import { motion } from "framer-motion"
-import Web from '../../assets/img/website.png'
 import Five from '../../assets/img/fivestars.png'
 import Comillas from '../../assets/img/comillas.png'
 import Azul from '../../assets/img/imgabstractaizquierda.png'
-import { FaUserLock } from 'react-icons/fa'
 import marcos from '../../assets/img/Marcos.jpg'
 import lukas from '../../assets/img/Lukas.jpg'
 import cami from '../../assets/img/Camila.jpeg'
-import bootstrap from 'bootstrap'
+
 
 
 const Testimonial = () => {

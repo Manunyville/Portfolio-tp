@@ -1,6 +1,6 @@
 import './footer.css'
 import React from 'react'
-import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Container, Heading, Image, Card, CardHeader, CardBody, Input, } from '@chakra-ui/react'
+import { Stack, HStack, VStack, Button, ButtonGroup, Text, Heading, Input, } from '@chakra-ui/react'
 import { color, motion } from "framer-motion"
 import { AiFillInstagram, AiOutlineYoutube } from "react-icons/ai";
 import { TfiTwitter } from "react-icons/tfi";

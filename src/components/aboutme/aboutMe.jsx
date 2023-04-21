@@ -1,7 +1,7 @@
 import './aboutMe.css'
 import React from 'react'
-import { Stack, HStack, VStack, Flex, Button, ButtonGroup, Text, Container, Heading, Image } from '@chakra-ui/react'
-import { motion } from "framer-motion"
+import { Stack, HStack, VStack, Text, Heading, Image } from '@chakra-ui/react'
+
 import Foto from '../../assets/img/Fotoportfolio.png'
 
 const About = () => {
