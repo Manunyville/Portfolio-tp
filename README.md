@@ -1,1 +1,1 @@
-En este portfolio reuni tanto mis habilidades de desarrollador front end como las de creacion de contenido para impulsar ventas de mis socios, esto se puede ver tanto en los proyectos que presente con en el apartado de redes sociales (instagram) es donde desempeño mayormente mi labor.
+En este portfolio reuni tanto mis habilidades de desarrollador front end como las de creacion de contenido para impulsar ventas de mis socios, esto se puede ver tanto en los proyectos que presente como en el apartado de redes sociales (instagram) es donde desempeño mayormente mi labor.
