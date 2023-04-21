@@ -64,8 +64,8 @@ const Hero = () => {
                 <Stack  
                 justify={{xl:"space-evenly", "2xl":'space-evenly'} }
                 direction={{xl:"row", md:'row',sm:'column',base:'column'}} 
-                width={{xl:"1000px",'2xl':'1400px',md:'800px',sm:'600px',base:'300px' }}
-                marginLeft={{"xl":'1000px'}}
+                width={{xl:"1000px",'2xl':'1200px',md:'800px',sm:'600px',base:'300px' }}
+                marginLeft={{"2xl":'1000px'}}
                 >
                     <Card as={motion.div} 
                     whileHover={{ scale: 1.2, color: '#A7D1E3' }} 
