@@ -12,21 +12,36 @@ const Footer = () => {
 
     return (
 
-        <Stack width="full" bg={'#061820'} color={'#F9F9F9'} marginTop='35px' gap="15px">
+        <Stack width={{'2xl':"full", xl:'full', md:'1300px',sm:'900px',base:'550px'}} bg={'#061820'} color={'#F9F9F9'} marginTop='35px' gap="15px">
             <HStack justify={'space-evenly'} marginTop="35px">
                 <VStack>
-                    <Heading size='sm'>Customer support</Heading>
-                    <Text Size='xs'>Contact me and get consultation on your design</Text>
+                    <Heading fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>Customer support</Heading>
+                    <Text fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>Contact me and get consultation on your design</Text>
                 </VStack>
                 <VStack>
-                    <Heading size='sm'>Get Deal & Reveals</Heading>
-                    <Text fontSize={'xs'}>Sing up for the email Newslleter.</Text>
+                    <Heading fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>Get Deal & Reveals</Heading>
+                    <Text fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>Sing up for the email Newslleter.</Text>
                 </VStack>
                 <VStack>
                     <form>
-                        <HStack >
-                            <Input type="email" placeholder='Enter email' borderRadius='0px' paddingX='35px' bg={'#FFFFFF'} paddingY='7px' />
-                            <Button marginTop='4px' borderRadius='0px' as={motion.button} paddingX='8px'paddingY='7px'whileHover={{ color: '#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>Join</Button>
+                        <HStack  alignItems="center">
+                            <ButtonGroup spacing="0px" >
+                            <Input type="email" 
+                            placeholder='Enter email' 
+                            borderRadius='0px' 
+                            paddingX='35px' 
+                            bg={'#FFFFFF'} 
+                            paddingY='24px' />
+                            <Button marginTop='0px'
+                            borderRadius='2px' 
+                            as={motion.button} 
+                            paddingX='25px'
+                            paddingY='25px'
+                            whileHover={{ color: '#0C7FB0' }} 
+                            color={'#F9F9F9'} 
+                            bg={'#0C7FB0'} 
+                            variant='solid'>Join</Button>
+                            </ButtonGroup>
                         </HStack>
                      </form>
                 </VStack>
@@ -34,12 +49,12 @@ const Footer = () => {
 
             <HStack justify={'space-evenly'}>
             <VStack>
-                    <Heading size='xs' color={'#07CFB0'}>Manuel Nyville Vito</Heading>
-                    <Text>Front end Developer</Text>
+                    <Heading fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}} color={'#07CFB0'}>Manuel Nyville Vito</Heading>
+                    <Text fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>Front end developer</Text>
                 </VStack>
                 <VStack>
                     <a href="#misServicios">
-                        <Text>Services</Text>
+                        <Text fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>Services</Text>
                     </a>
                     <a href="#misServicios">
                         <Button as={motion.button} whileHover={{ color: '#07CFB0' }} color={'#F9F9F9'} variant='link'  >
@@ -79,14 +94,14 @@ const Footer = () => {
                 </VStack>
 
                 <VStack>
-                    <Text>Contact me</Text>
-                    <Text>+54 9 223 565 5961</Text>
-                    <Text>Manuelnyville@gmail.com</Text>
+                    <Text fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>Contact me</Text>
+                    <Text fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>+54 9 223 565 5961</Text>
+                    <Text fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}> Manuelnyville@gmail.com</Text>
 
                 </VStack>
 
                 <VStack>
-                    <Text>Social media</Text>
+                    <Text fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>Social media</Text>
                     <Button as={motion.button} whileHover={{ scale: 1.2 }} colorScheme='teal' variant={'ghost'}>
                         <a href="https://www.facebook.com/profile.php?id=100009833178957">
                             <FiFacebook />
@@ -111,7 +126,7 @@ const Footer = () => {
 
             </HStack>
             <HStack justify="center" >
-                <Text>Copyright 2023 Inc. All rights reserved. | Terms of Use | Updated Privacy Policy | Accessibility</Text>
+                <Text fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>Copyright 2023 Inc. All rights reserved. | Terms of Use | Updated Privacy Policy | Accessibility</Text>
             </HStack>
         </Stack>
        

@@ -123,7 +123,7 @@ const Testimonial = () => {
                     </Card>
 
                 </HStack>
-                <VStack gap="15px">
+                <VStack gap="8px">
                     <HStack justify={'space-around'}>
 
                         <Button as={motion.button} 

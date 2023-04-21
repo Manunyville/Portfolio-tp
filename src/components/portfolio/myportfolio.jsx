@@ -4,6 +4,7 @@ import { Stack, HStack, VStack, Flex, Button, Image, Text, Container, Heading, C
 import { motion } from "framer-motion"
 import Fotaki from '../../assets/img/codigoweb.png'
 import Azderecha from '../../assets/img/imgabstractaderecha.png'
+import Deluxe from '../../assets/img/promoTorpedo.png'
 
 
 const Portfolio = () => {
@@ -85,12 +86,12 @@ const Portfolio = () => {
                      alignItems={'center'}>
 
                         <CardHeader>
-                            <Image src={Fotaki} 
+                            <Image src={Deluxe} 
                              height={{xl:'150px',md:'100px',sm:'70px',base:'30px'}} />
                             <Heading fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}> Promoving Torpedo</Heading>
                         </CardHeader>
                         <CardBody>
-                            <Text fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Doy a conocer un nuevo modelo, un torpedo deluxe</Text>
+                            <Text fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Doy a conocer un nuevo modelo de mate, un torpedo deluxe</Text>
                             <Button marginTop='4px'
                                 as={motion.button}
                                 paddingX={{xl:'65px',md:'35px',sm:'10px'}}
