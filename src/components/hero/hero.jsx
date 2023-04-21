@@ -13,8 +13,8 @@ const Hero = () => {
     return (
 
         <Container id="hero" width={"full"} margin="0">
-            <Stack  marginLeft="90px" gap="60px">
-                <HStack width={{xl:'1200px', md:'600px', sm:'300px'}} justifyContent="space-around" >
+            <Stack  marginLeft={{xl:"90px", '2xl':'470px'}} gap="60px">
+                <HStack width={{ '2xl':'1800px', xl:'1200px', md:'600px', sm:'300px'}} justifyContent="space-around" >
                     <VStack>
                         <Stack>
                             <Text fontSize='xl' color={'#0C7FB0'}>Hello, I'm</Text>
@@ -49,9 +49,11 @@ const Hero = () => {
                         </Stack>
                     </HStack>
                 </HStack>
-                <Stack  justify={"space-evenly"} direction={{xl:"row", md:'column',sm:'column',base:'column'}} width="1200px">
+                <Stack  justify={"space-evenly"} 
+                direction={{xl:"row", md:'row',sm:'column',base:'column'}} 
+                width={{xl:"1200px",'2xl':'1750px' }}>
                     <Card as={motion.div} 
-                    hileHover={{ scale: 1.2, color: '#A7D1E3' }} 
+                    whileHover={{ scale: 1.2, color: '#A7D1E3' }} 
                     bg={'#F9F9F9'} 
                     className="cardHero" >
                         <CardHeader >

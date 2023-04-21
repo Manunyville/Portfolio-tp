@@ -9,13 +9,13 @@ const About = () => {
     return (
 
         <Stack width='full' id='about' margin="0 auto" bg={'#F9F9F9'} >
-            <HStack w={{xl:"1200px",md:'400px',sm:'350px',base:'250px' }}
+            <HStack w={{'2xl':'1800px',xl:"1200px",md:'400px',sm:'350px',base:'250px' }}
             gap={{xl:"120px", md:'75px', sm:'45px',base:'15px' }}
             marginTop="15px" 
             flexDirection={{xl:'row',md:'column',sm:'column',base:'column'}}>
 
 
-                <HStack marginLeft={{xl:"220px",md:'110px',sm:'55px',base:'0px'}}>
+                <HStack marginLeft={{'2xl':'650px',xl:"220px",md:'110px',sm:'55px',base:'0px'}}>
                     <Image src={Foto} 
                      w={{xl:"500px", md:'250px', sm:'75px', base:'25px'}} 
                     h={{xl:"400px", md:'200px', sm:'65px', base:'15px'}} />

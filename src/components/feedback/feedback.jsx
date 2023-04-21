@@ -20,49 +20,105 @@ const Testimonial = () => {
         <Stack id='testimonios' width={'full'} margin="0 auto">
             <VStack gap="45px" marginLeft="70px">
                 <VStack>
-                    <Text color={'#0C7FB0'} marginTop="20px">Client's feedback</Text>
+                    <Text color={'#0C7FB0'} 
+                    fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}
+                    marginTop="20px">Client's feedback</Text>
                     <HStack>
                         <Image src={Azul} className='imgabstractaFeed' />
                     </HStack>
                     <Stack>
-                        <Heading>Testimonials</Heading>
+                        <Heading fontSize={{xl:'25px',md:'20px',sm:'15px',base:'12px'}}>Testimonials</Heading>
                     </Stack>
                 </VStack>
-                <HStack gap="30px" className='stackFeed' marginLeft="45px" margin="0 auto">
-                    <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} className='cardsFeedback' bg={'#F9F9F9'} width='300px' height='300px'>
+                <HStack gap="30px" 
+                className='stackFeed' 
+                marginLeft="45px" 
+                margin="0 auto"
+                flexDirection={{xl:'row',md:'row',sm:'column',base:'column'}}>
+                    <Card as={motion.div} 
+                    whileHover={{ scale: 1.1, color: '#0C7FB0' }} 
+                    className='cardsFeedback' 
+                    bg={'#F9F9F9'} 
+                    width={{xl:'300px',md:'250px',sm:'200px',base:'170px'}} 
+                    height={{xl:'300px',md:'250px',sm:'200px',base:'170px'}}
+                    >
                         <HStack gap={10}>
-                            <Image className='imgFeed' src={cami} />
-                            <Image src={Comillas} w='100px' className='comillasfeed' />
+                            <Image className='imgFeed' 
+                            src={cami} 
+                            width= {{xl:'70px',md:'40px',sm:'30px',base:'20px'}}
+                            height= {{xl:'80px',md:'50px',sm:'30px',base:'20px'}} 
+                            left= {{xl:'115px',md:'100px',sm:'80px',base:'75px'}}
+                            bottom= {{xl:'250px',md:'225px', sm:'185px',base:'165px'}}/>
+                            <Image src={Comillas} 
+                            w={{xl:'100px', md:'80px',sm:'60px',base:'30px'}} 
+                            className='comillasfeed' />
                         </HStack>
-                        <CardBody className='cardsFeedback'>
-                            <Heading size='md'> Camila Moncada</Heading>
-                            <Image src={Five} className='fiveStars' />
-                            <Text>Manuel realiza trabajos muy buenos, todos fueron entregados en tiempo y forma; ademas trabaja muy bien con su equipo, sin duda volveria a contratarlos</Text>
+                        <CardBody className='cardsFeedback' >
+                            <Heading fontSize={{xl:'20px',md:'15px',sm:'12px',base:'8px'}}> Camila Moncada</Heading>
+                            <Image src={Five} 
+                            className='fiveStars' 
+                            width= {{xl:'90px',md:'70px',sm:'40px',base:'20px'}}
+                            height={{xl:' 50px'}}
+                           marginLeft= {{xl:'75px',md:'65px',sm:'55px',base:'45px'}}
+                           />
+                            <Text fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Manuel realiza trabajos muy buenos, todos fueron entregados en tiempo y forma; ademas trabaja muy bien con su equipo, sin duda volveria a contratarlos</Text>
                         </CardBody>
                     </Card>
 
-                    <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} className='cardsFeedback' bg={'#F9F9F9'} width='300px' height='300px'>
+                    <Card as={motion.div} 
+                    whileHover={{ scale: 1.1, color: '#0C7FB0' }} 
+                    className='cardsFeedback' 
+                    bg={'#F9F9F9'} 
+                    width={{xl:'300px',md:'250px',sm:'200px',base:'170px'}} 
+                    height={{xl:'300px',md:'250px',sm:'200px',base:'170px'}}>
                         <HStack >
-                            <Image className='imgFeed' src={lukas} />
-                            <Image src={Comillas} w='100px' />
+                            <Image className='imgFeed' 
+                            src={lukas} 
+                            width= {{xl:'70px',md:'40px',sm:'30px',base:'20px'}}
+                            height= {{xl:'80px',md:'50px',sm:'30px',base:'20px'}} 
+                            left= {{xl:'115px',md:'100px',sm:'80px',base:'75px'}}
+                            bottom= {{xl:'250px',md:'225px', sm:'185px',base:'165px'}}/>
+                            <Image src={Comillas} 
+                            w={{xl:'100px', md:'80px',sm:'60px',base:'30px'}} 
+                            className='comillasfeed'/>
                         </HStack>
                         <CardBody className='cardsFeedback'>
-                            <Heading size='md'>Lucas Quintero</Heading>
-                            <Image src={Five} className='fiveStars' />
-                            <Text>Manuel se encargo de la promocion de mis productos materos y se dispararon las ventas!</Text>
+                            <Heading fontSize={{xl:'20px',md:'15px',sm:'12px',base:'8px'}}>Lucas Quintero</Heading>
+                            <Image src={Five} 
+                            className='fiveStars' 
+                            width= {{xl:'90px',md:'70px',sm:'40px',base:'20px'}}
+                            height={{xl:' 50px'}}
+                            marginLeft= {{xl:'75px',md:'65px',sm:'55px',base:'45px'}} />
+                            <Text fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Manuel se encargo de la promocion de mis productos materos y se dispararon las ventas!</Text>
                         </CardBody>
                     </Card>
 
-                    <Card as={motion.div} whileHover={{ scale: 1.1, color: '#0C7FB0' }} bg={'#F9F9F9'} className='cardsFeedback' width='300px' height='300px'>
+                    <Card as={motion.div} 
+                    whileHover={{ scale: 1.1, color: '#0C7FB0' }} 
+                    bg={'#F9F9F9'} 
+                    className='cardsFeedback' 
+                    width={{xl:'300px',md:'250px',sm:'200px',base:'170px'}} 
+                    height={{xl:'300px',md:'250px',sm:'200px',base:'170px'}}>
                         <HStack >
-                            <Image className='imgFeed' src={marcos} />
-                            <Image src={Comillas} w='100px' />
+                            <Image className='imgFeed' 
+                            src={marcos}
+                            width= {{xl:'70px',md:'40px',sm:'30px',base:'20px'}}
+                            height= {{xl:'80px',md:'50px',sm:'30px',base:'20px'}} 
+                            left= {{xl:'115px',md:'100px',sm:'80px',base:'75px'}}
+                            bottom= {{xl:'250px',md:'225px', sm:'185px',base:'165px'}}/>
+                            <Image src={Comillas} 
+                            w={{xl:'100px', md:'80px',sm:'60px',base:'30px'}} 
+                            className='comillasfeed' />
 
                         </HStack>
                         <CardBody className='cardsFeedback'>
-                            <Heading size='md'>Marcos Servezynski </Heading>
-                            <Image src={Five} className='fiveStars' />
-                            <Text>Los trabajos que Manuel ha hecho son muy ingeniosos, las ideas que yo le dije el las tranformo tal cual yo me las imaginaba!</Text>
+                            <Heading fontSize={{xl:'20px',md:'15px',sm:'12px',base:'8px'}}>Marcos Servezynski </Heading>
+                            <Image src={Five} 
+                            className='fiveStars' 
+                            width= {{xl:'90px',md:'70px',sm:'40px',base:'20px'}}
+                            height={{xl:' 50px'}}
+                            marginLeft= {{xl:'75px',md:'65px',sm:'55px',base:'45px'}} />
+                            <Text fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Los trabajos que Manuel ha hecho son muy ingeniosos, las ideas que yo le dije el las tranformo tal cual yo me las imaginaba!</Text>
                         </CardBody>
                     </Card>
 
@@ -70,12 +126,30 @@ const Testimonial = () => {
                 <VStack gap="15px">
                     <HStack justify={'space-around'}>
 
-                        <Button as={motion.button} borderRadius='50%' bg={'#F9F9F9'} size='xs' whileHover={{ backgroundColor: '#0C7FB0' }}></Button>
-                        <Button as={motion.button} borderRadius='50%' bg={'#F9F9F9'} size='xs' whileHover={{ backgroundColor: '#0C7FB0' }}> </Button>
-                        <Button as={motion.button} borderRadius='50%' bg={'#F9F9F9'} size='xs' whileHover={{ backgroundColor: '#0C7FB0' }}></Button>
+                        <Button as={motion.button} 
+                        borderRadius='50%' 
+                        bg={'#F9F9F9'} 
+                        size='xs' 
+                        whileHover={{ backgroundColor: '#0C7FB0' }}></Button>
+                        <Button as={motion.button} 
+                        borderRadius='50%' 
+                        bg={'#F9F9F9'} 
+                        size='xs' 
+                        whileHover={{ backgroundColor: '#0C7FB0' }}> </Button>
+                        <Button as={motion.button} 
+                        borderRadius='50%' 
+                        bg={'#F9F9F9'} 
+                        size='xs' 
+                        whileHover={{ backgroundColor: '#0C7FB0' }}></Button>
                     </HStack>
                     <VStack>
-                        <Button arginTop='4px' as={motion.button} paddingX='10px' whileHover={{ color: '#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>View all</Button>
+                        <Button marginTop='4px' 
+                        as={motion.button} 
+                        paddingX='10px' 
+                        whileHover={{ color: '#0C7FB0' }} 
+                        color={'#F9F9F9'} 
+                        bg={'#0C7FB0'} 
+                        variant='solid'>View all</Button>
                     </VStack>
                 </VStack>
             </VStack>
