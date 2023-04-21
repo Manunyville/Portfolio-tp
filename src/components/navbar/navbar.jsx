@@ -7,7 +7,7 @@ const Navbar = () => {
 
 
     return (
-        <Container width={"full"} >
+        <Container width={{'2xl':"full", xl:'1200px', lg:'1000px',md:'800px',xs:'600px'}} >
             <Stack  padding="15px">
                 <nav>
                     <HStack gap={{xl:"500px", md:"50px",sm:"10px"}} 

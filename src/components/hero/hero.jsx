@@ -13,8 +13,14 @@ const Hero = () => {
     return (
 
         <Container id="hero" width={"full"} margin="0">
-            <Stack marginLeft={{'2xl':'430px',xl:"20px",md:'110px',sm:'55px',base:'0px'}} gap="60px">
-                <HStack width={{ '2xl':'1800px', xl:'1200px', md:'600px', sm:'300px'}} justifyContent="space-around">
+            <Stack 
+         //   marginLeft={{'2xl':'0px',xl:"20px",md:'110px',sm:'55px',base:'0px'}} 
+            gap={ "60px"}>
+                <HStack 
+                width={{ '2xl':'1800px', xl:'1200px',lg:'800px', md:'600px', sm:'300px'}} 
+                justifyContent="space-around"
+                gap={{"2xl":'0px'}}
+                >
                     <VStack>
                         <Stack>
                             <Text fontSize='xl' color={'#0C7FB0'}>Hello, I'm</Text>
@@ -44,15 +50,16 @@ const Hero = () => {
                         <Image 
                         src={Foto} 
                         className="fotoMia" 
-                        width={{md:'225px',xl:'450px', sm:'100px',base:'50px'}}
-                        height={{md:'225px',xl:'450px', sm:'100px',base:'50px'}}/>
+                        width={{md:'225px',xl:'350px', sm:'100px',base:'50px'}}
+                        height={{md:'225px',xl:'350px', sm:'100px',base:'50px'}}/>
                         
                         </Stack>
                     </HStack>
                 </HStack>
                 <Stack  justify={"space-evenly"} 
                 direction={{xl:"row", md:'row',sm:'column',base:'column'}} 
-                width={{xl:"1200px",'2xl':'1750px',md:'800px',sm:'600px',base:'300px' }}>
+              width={{xl:"1200px",'2xl':'1800px',md:'800px',sm:'600px',base:'300px' }}
+                >
                     <Card as={motion.div} 
                     whileHover={{ scale: 1.2, color: '#A7D1E3' }} 
                     bg={'#F9F9F9'} 
