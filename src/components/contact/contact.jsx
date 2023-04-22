@@ -1,6 +1,6 @@
 import './contact.css'
 import React from 'react'
-import { Stack, VStack, Button, Text, Container, Heading, Image, Input } from '@chakra-ui/react'
+import { Stack, VStack, Button, Text, Heading, Image, Input } from '@chakra-ui/react'
 import { motion } from "framer-motion";
 import { useForm, ValidationError } from '@formspree/react';
 import Azul from '../../assets/img/imgabstractaderecha.png';

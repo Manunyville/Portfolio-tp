@@ -1,6 +1,6 @@
 import './aboutMe.css'
 import React from 'react'
-import { Stack, HStack, VStack, Text, Heading, Image } from '@chakra-ui/react'
+import { Stack, Text, Heading, Image } from '@chakra-ui/react'
 
 import Foto from '../../assets/img/Fotoportfolio.png'
 

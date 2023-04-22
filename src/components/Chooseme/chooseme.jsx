@@ -1,7 +1,6 @@
 import './chooseme.css'
 import React from 'react'
-import { Stack, VStack, Flex, Text, Heading, Image, Card, CardBody, } from '@chakra-ui/react'
-import { motion } from "framer-motion"
+import { Stack, VStack, Text, Heading, Image, Card, CardBody, } from '@chakra-ui/react'
 import Web from '../../assets/img/website.png'
 import Creativo from '../../assets/img/Ideacreativa.png'
 import equipo from '../../assets/img/teamplayer.png'
