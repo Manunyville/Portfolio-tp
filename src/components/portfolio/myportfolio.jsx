@@ -1,6 +1,6 @@
 import './myportfolio.css'
 import React from 'react'
-import { Stack, HStack, VStack, Button, Image, Text, Container, Heading, Card, CardHeader, CardBody, } from '@chakra-ui/react'
+import { Stack, VStack, Button, Image, Text, Heading, Card, CardHeader, CardBody, } from '@chakra-ui/react'
 import { motion } from "framer-motion"
 import Azderecha from '../../assets/img/imgabstractaderecha.png'
 import Deluxe from '../../assets/img/promoTorpedo.png'

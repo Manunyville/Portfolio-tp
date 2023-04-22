@@ -35,7 +35,7 @@ const Testimonial = () => {
                     alignItems={'center'}>
 
                     <Card bg={'#F9F9F9'} align={'center'} w={{ base: '40%', md: 'xs' }} h={{ base: 'auto', md: '240px' }}
-                        className='cardServ'
+                       justifyContent={'center'}
                         position={'relative'}
                         backgroundColor={'#F9F9F9'}>
 
@@ -52,11 +52,15 @@ const Testimonial = () => {
                         </Stack>
                         <CardBody textAlign={'center'} >
                             <Heading fontSize={{ base: '6px', md: '15px' }}>Marcos Servezynski </Heading>
+                            <Image src={Five} 
+                            width={{ base: '20px', md: '90px' }}
+                            height={{ base: '20px', md: '50px' }} 
+                            marginLeft={{base:'28px', md:'86px'}}/>
                             <Text fontSize={{ base: '4px', md: '15px' }}>Los trabajos que Manuel ha hecho son muy ingeniosos, las ideas que yo le dije el las tranformo tal cual yo me las imaginaba!.</Text>
                         </CardBody>
                     </Card>
                     <Card bg={'#F9F9F9'} align={'center'} w={{ base: '40%', md: 'xs' }} h={{ base: 'auto', md: '240px' }}
-                        className='cardServ'
+                        justifyContent={'center'}
                         position={'relative'}
                         backgroundColor={'#F9F9F9'}>
 
@@ -73,11 +77,15 @@ const Testimonial = () => {
                         </Stack>
                         <CardBody textAlign={'center'} >
                             <Heading fontSize={{ base: '6px', md: '15px' }}>Camila Moncada </Heading>
+                            <Image src={Five} 
+                            width={{ base: '20px', md: '90px' }}
+                            height={{ base: '20px', md: '50px' }} 
+                            marginLeft={{base:'28px', md:'86px'}}/>
                             <Text fontSize={{ base: '4px', md: '15px' }}>Manuel realiza trabajos muy buenos, todos fueron entregados en tiempo y forma; ademas trabaja muy bien con su equipo, sin duda volveria a contratarlos.</Text>
                         </CardBody>
                     </Card>
                     <Card bg={'#F9F9F9'} align={'center'} w={{ base: '40%', md: 'xs' }} h={{ base: 'auto', md: '240px' }}
-                        className='cardServ'
+                        justifyContent={'center'}
                         position={'relative'}
                         backgroundColor={'#F9F9F9'}>
 
@@ -94,6 +102,10 @@ const Testimonial = () => {
                         </Stack>
                         <CardBody textAlign={'center'} >
                             <Heading fontSize={{ base: '6px', md: '15px' }}>Lucas Quintero </Heading>
+                            <Image src={Five} 
+                            width={{ base: '20px', md: '90px' }}
+                            height={{ base: '20px', md: '50px' }} 
+                            marginLeft={{base:'28px', md:'86px'}}/>
                             <Text fontSize={{ base: '4px', md: '15px' }}>Manuel se encargo de la promocion de mis productos materos y se dispararon las ventas!.</Text>
                         </CardBody>
                     </Card>

@@ -1,6 +1,6 @@
 import './navbar.css'
 import React from 'react'
-import { Stack, HStack, Button, ButtonGroup, Container, Heading } from '@chakra-ui/react'
+import { Stack, Button,  Heading } from '@chakra-ui/react'
 import { motion } from "framer-motion"
 
 const Navbar = () => {

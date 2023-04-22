@@ -1,6 +1,6 @@
 import './service.css'
 import React from 'react'
-import { Stack, HStack, VStack, Text, Container, Heading, Image, Card, CardBody, } from '@chakra-ui/react'
+import { Stack, VStack, Text, Heading, Image, Card, CardBody, } from '@chakra-ui/react'
 import Web from '../../assets/img/codigoweb.png'
 import diseño from '../../assets/img/Diseñodepagina.png'
 import Diseñoweb from '../../assets/img/desarrolloweb.png'
@@ -41,7 +41,7 @@ const Services = () => {
                             backgroundColor={'#F9F9F9'}
                         >
                             <Image
-                                src={diseño}
+                                src={Web}
                                 position={'absolute'}
                                 top={{ base: -4, md: -12 }}
                                 width={{ base: '30px', md: '80px' }}
