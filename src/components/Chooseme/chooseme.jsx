@@ -10,80 +10,67 @@ const Choose = () => {
 
     return (
 
-        <Stack width={"full"} marginTop="10px" id='eligeme'>
-            <VStack width={{xl:'1200px',md:'1000px',sm:'800px',base:'600px'}} margin="0 auto" gap="55px" marginTop="10px" marginRight="0 auto" >
-                <VStack justifyContent={'space-between'} >
+        <Stack width={"full"} id='eligeme'>
+            <VStack justifyContent={'space-around'} gap={16}> 
+                <VStack  >
                     <Text color={'#0C7FB0'} fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Why you should choose me</Text>
                     <Heading fontSize={{xl:'25px',md:'20px',sm:'15px',base:'12px'}}>Why choose me</Heading>
                 </VStack>
-                <Flex gap="85px" flexDirection={{xl:'row',md:'row',sm:'column',base:'column' }}>
-                    <Card as={motion.div} 
-                    whileHover={{ scale: 1.1, color: '#0C7FB0' }} 
-                    className='cardsCh' bg={'#F9F9F9'} 
-                    height={{xl:"220px",md:'190px',sm:'130px',base:'90px' }}
-                    width={{ xl: '250px', md:'200px',sm:'170px',base:'120px'  }}
-                    alignItems={'center'}>
-                        <Stack>
-                            <Image className='imgWeb' 
-                            src={equipo} 
-                            bottom={{xl:'200px',md:'170px',sm:'115px',base:'80px'}}
-                            left={{xl:'75px',md:'55px',sm:'65px',base:'50px' }} 
-                              height={{xl:'80px', md:'70px',sm:'40px',base:'20px'}} 
-                              width= {{xl:'80px',md:'70px',sm:'40px',base:'20px'}}/>
-                        </Stack>
-                        <CardBody>
-                            <Stack textAlign={'center'}>
-                                <Heading fontSize={{xl:'20px',md:'15px',sm:'12px',base:'8px'}}> Team player</Heading>
-                            </Stack>
-                            <Text fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Junto a otros desarrolladores nos divimos las tareas y debatimos ideas para crear una pagina con mayor criterio y objetividad</Text>
+                <Stack  w={{base:'full', md:'80%'}}
+                direction={{base:'column', md:'row'}} justifyContent={'space-around'}alignItems={'center'} gap={{base:4}}>
+                <Card bg={'#F9F9F9'} align={'center'} w={{ base: '40%', md: '2xs' }} h={{ base: 'auto', md: '240px' }}
+                        className='cardsCh'
+                        position={'relative'}
+                        backgroundColor={'#F9F9F9'}>
+                        <Image
+                            src={equipo}
+                            borderRadius={'50%'}
+                            position={'absolute'}
+                            top={{ base: -4, md: -14 }}
+                            width={{ base: '30px', md: '80px' }}
+                            height={{ base: '30px', md: '80px' }} />
+                        <CardBody textAlign={'center'} >
+                            <Heading fontSize={{ base: '6px', md: '15px' }}>Team player </Heading>
+                            <Text fontSize={{ base: '4px', md: '15px' }}>Junto a otros desarrolladores nos divimos las tareas y debatimos ideas para crear una pagina con mayor criterio y objetividad</Text>
                         </CardBody>
+                    </Card>
 
-                    </Card>
-                    <Card as={motion.div} 
-                    whileHover={{ scale: 1.1, color: '#0C7FB0' }}
-                    bg={'#F9F9F9'} 
-                    className='cardsCh' 
-                    height={{xl:"220px",md:'190px',sm:'130px',base:'90px' }}
-                    width={{ xl: '250px', md:'200px',sm:'170px',base:'120px'  }}
-                    alignItems={'center'}>
-                        <Stack>
-                             <Image  className='imgWeb'
-                              src={Creativo}
-                              bottom={{xl:'200px',md:'170px',sm:'115px',base:'80px'}}
-                             left={{xl:'75px',md:'55px',sm:'65px',base:'50px' }} 
-                             height={{xl:'80px', md:'70px',sm:'40px',base:'20px'}} 
-                             width= {{xl:'80px',md:'70px',sm:'40px',base:'20px'}}/>
-                        </Stack>
-                        <CardBody>
-                            <Stack textAlign={'center'}>
-                                <Heading fontSize={{xl:'20px',md:'15px',sm:'12px',base:'8px'}}> Creative design</Heading>
-                            </Stack>
-                            <Text fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Desarrollo ideas creativas tanto en el diseño de la applicacion web como en su funcionamiento.</Text>
+                    <Card bg={'#F9F9F9'} align={'center'} w={{ base: '40%', md: '2xs' }} h={{ base: 'auto', md: '240px' }}
+                        className='cardsCh'
+                        position={'relative'}
+                        backgroundColor={'#F9F9F9'}>
+                        <Image
+                            src={Web}
+                            borderRadius={'50%'}
+                            position={'absolute'}
+                            top={{ base: -4, md: -14 }}
+                            width={{ base: '30px', md: '80px' }}
+                            height={{ base: '30px', md: '80px' }} />
+                        <CardBody textAlign={'center'} >
+                            <Heading fontSize={{ base: '6px', md: '15px' }}>Responsive </Heading>
+                            <Text fontSize={{ base: '4px', md: '15px' }}>Entrego las applicaciones webs/paginas webs antes del tiempo estipulado</Text>
                         </CardBody>
                     </Card>
-                    <Card as={motion.div}
-                     whileHover={{ scale: 1.1, color: '#0C7FB0' }} 
-                    bg={'#F9F9F9'} 
-                    className='cardsCh' 
-                    height={{xl:"220px",md:'190px',sm:'130px',base:'90px' }}
-                    width={{ xl: '250px', md:'200px',sm:'170px',base:'120px'  }}
-                    alignItems={'center'}>
-                        <Stack textAlign={'center'}>
-                            <Image bottom={{xl:'200px',md:'170px',sm:'115px',base:'80px'}}
-                             left={{xl:'75px',md:'55px',sm:'65px',base:'50px' }} 
-                             className='imgWeb' src={Web} 
-                             height={{xl:'80px', md:'70px',sm:'40px',base:'20px'}} 
-                              width= {{xl:'80px',md:'70px',sm:'40px',base:'20px'}}/>
-                        </Stack>
-                        <CardBody>
-                            <Stack textAlign={'center'}>
-                                <Heading fontSize={{xl:'20px',md:'15px',sm:'12px',base:'8px'}}>Responsive</Heading>
-                            </Stack>
-                            <Text fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Entrego las applicaciones webs/paginas webs antes del tiempo estipulado</Text>
-                        </CardBody>
 
+                    <Card bg={'#F9F9F9'} align={'center'} w={{ base: '40%', md: '2xs' }} h={{ base: 'auto', md: '240px' }}
+                        className='cardsCh'
+                        position={'relative'}
+                        backgroundColor={'#F9F9F9'}>
+                        <Image
+                            src={Creativo}
+                            borderRadius={'50%'}
+                            position={'absolute'}
+                            top={{ base: -4, md: -14 }}
+                            width={{ base: '30px', md: '80px' }}
+                            height={{ base: '30px', md: '80px' }} />
+                        
+                        <CardBody textAlign={'center'} >
+                            <Heading fontSize={{ base: '6px', md: '15px' }}>Creative design </Heading>
+                            <Text fontSize={{ base: '4px', md: '15px' }}>Desarrollo ideas creativas tanto en el diseño de la applicacion web como en su funcionamiento.</Text>
+                        </CardBody>
                     </Card>
-                </Flex>
+               
+                </Stack>
             </VStack>
         </Stack>
 

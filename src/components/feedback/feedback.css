@@ -3,20 +3,7 @@
     margin: 0px;
 }
 
-.cardsFeedback{
-   align-items:end;
-    text-align: center;
-    align-content: center;
-    justify-content: space-evenly;
-}
-.imgFeed{ 
-    position: absolute;
-    border-radius: 50%;
-}
-.stackFeed{
-    
-    position: relative;
-}
+
 .imgabstractaFeed{
     position: absolute;
     left: 0px;

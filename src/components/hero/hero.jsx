@@ -12,32 +12,23 @@ const Hero = () => {
 
     return (
 
-        <Container id="hero" width={"full"} margin="0">
-            <Stack 
-           marginLeft={{'2xl':'220px',xl:"20px",md:'110px',sm:'55px',base:'0px'}} 
-            gap={ "60px"}
-            justify={"center"}
-            
-            >
-                <HStack 
-                marginLeft={{xl:'65px', "2xl":'0'}}
-                margin={"0 auto"}
-                width={{ '2xl':'1800px', xl:'1200px',lg:'800px', md:'600px', sm:'300px'}} 
-                justifyContent={{xl:"space-around", "2xl":'space-evenly'}}
-                gap={{xl:'200px'}}
+        <Container id="hero" minW={"full"} m={0}>
+            <Stack gap={20} >
+                <Stack
+                    justifyContent={'space-around'}
+                    direction={{ base: 'column', md: 'row' }}
+                    textAlign={'center'}
+                    alignItems={'center'}
                 >
                     <VStack>
-                        <Stack>
+                        <Stack textAlign={{base:'center', md:'start'}}>
                             <Text fontSize='xl' color={'#0C7FB0'}>Hello, I'm</Text>
-
-                        
-                        <Heading size={"lg"}>Manuel Nyville</Heading>
-                        <Heading fontSize='xl' color={'#0C7FB0'} >Front End Developer</Heading>
-                        <Text color={'#6D7173'}>I am a Front end developer...</Text>
+                            <Heading size={"lg"}>Manuel Nyville</Heading>
+                            <Heading fontSize='xl' color={'#0C7FB0'} >Front End Developer</Heading>
+                            <Text color={'#6D7173'}>I am a Front end developer...</Text>
                         </Stack>
-
-                        <ButtonGroup>
-                        <a href="#contact">
+                        <Stack direction={'row'}>
+                            <a href="#contact">
                                 <Button as={motion.button} whileHover={{ color: '#0C7FB0' }} color={'#F9F9F9'} bg={'#0C7FB0'} variant='solid'>
                                     Hire me
                                 </Button>
@@ -47,77 +38,72 @@ const Hero = () => {
                                     See Portfolio
                                 </Button>
                             </a>
-                        </ButtonGroup>
-                    </VStack>
-                      
-                    <HStack width={{md:'350px',xl:'450px'}}>
-                        <Stack >
-                        <Image 
-                        src={Foto}
-                        left= {{xl:'60px',"2xl":'80px',md:'55px'}} 
-                        bottom={{xl:'115px'}}  
-                        className="fotoMia" 
-                        width={{md:'225px',xl:'350px', sm:'100px',base:'70px'}}
-                        height={{md:'225px',xl:'350px', sm:'100px',base:'70px'}}/>
-                        
                         </Stack>
-                    </HStack>
-                </HStack>
-                <Stack  
-                justify={{xl:"space-evenly", "2xl":'space-evenly'} }
-                direction={{xl:"row", md:'row',sm:'column',base:'column'}} 
-                width={{xl:"1000px",'2xl':'1200px',md:'800px',sm:'600px',base:'300px' }}
-                marginLeft={{"2xl":'1000px'}}
+                    </VStack>
+                    <Stack >
+                        <Image
+                            src={Foto}
+                            width={{ md: '225px', lg: '350px' }}
+                            height={{ md: '225px', lg: '350px' }} />
+                    </Stack>
+
+                </Stack>
+                <Stack
+                    w={'full'}
+                    justifyContent={'center'}
+                    alignItems={'center'}
                 >
-                    <Card as={motion.div} 
-                    whileHover={{ scale: 1.2, color: '#A7D1E3' }} 
-                    bg={'#F9F9F9'} 
-                    className="cardHero" >
-                        <CardHeader >
-                            <Heading size='md' className="imgHero"> <RiMedalLine /> </Heading>
-                        </CardHeader>
-                        <CardBody>
-                            <Text>0 Awards</Text>
-                        </CardBody>
-                    </Card>
-                    <Card as={motion.div} 
-                    whileHover={{ scale: 1.2, color: '#A7D1E3' }} 
-                    bg={'#F9F9F9'} 
-                    className="cardHero">
-                        <CardHeader>
-                            <Heading size='md' className="imgHero">  <FaUsers /></Heading>
-                        </CardHeader>
-                        <CardBody>
-                            <Text>10+ Clients</Text>
-                        </CardBody>
-                    </Card>
-                    <Card as={motion.div} 
-                    whileHover={{ scale: 1.2, color: '#A7D1E3' }} 
-                    bg={'#F9F9F9'}
-                    className="cardHero">
-                        <CardHeader>
-                            <Heading size='md' className="imgHero"> <FaAward /> </Heading>
-                        </CardHeader>
-                        <CardBody>
-                            <Text>02 Months experience</Text>
-                        </CardBody>
-                    </Card>
-                    <Card as={motion.div} 
-                    whileHover={{ scale: 1.2, color: '#A7D1E3' }} 
-                    bg={'#F9F9F9'}
-                    className="cardHero">
-                        <CardHeader>
-                            <Heading size='md' className="imgHero"> <FaTrophy /> </Heading>
-                        </CardHeader>
-                        <CardBody>
-                            <Text>+20 Proyects</Text>
-                        </CardBody>
-                    </Card>
+                    <Stack w={{base:'full',md:'70%'} }direction={{base:'column',md:'row'}} justifyContent={{base:'center', md:'space-between'}} alignItems={'center'}>
+                        <Card as={motion.div}
+                            whileHover={{ scale: 1.2, color: '#A7D1E3' }}
+                            bg={'#F9F9F9'}
+                            className="cardHero" >
+                            <CardHeader >
+                                <Heading size='md' className="imgHero"> <RiMedalLine /> </Heading>
+                            </CardHeader>
+                            <CardBody>
+                                <Text>0 Awards</Text>
+                            </CardBody>
+                        </Card>
+                        <Card as={motion.div}
+                            whileHover={{ scale: 1.2, color: '#A7D1E3' }}
+                            bg={'#F9F9F9'}
+                            className="cardHero">
+                            <CardHeader>
+                                <Heading size='md' className="imgHero">  <FaUsers /></Heading>
+                            </CardHeader>
+                            <CardBody>
+                                <Text>10+ Clients</Text>
+                            </CardBody>
+                        </Card>
+                        <Card as={motion.div}
+                            whileHover={{ scale: 1.2, color: '#A7D1E3' }}
+                            bg={'#F9F9F9'}
+                            className="cardHero">
+                            <CardHeader>
+                                <Heading size='md' className="imgHero"> <FaAward /> </Heading>
+                            </CardHeader>
+                            <CardBody>
+                                <Text>02 Months experience</Text>
+                            </CardBody>
+                        </Card>
+                        <Card as={motion.div}
+                            whileHover={{ scale: 1.2, color: '#A7D1E3' }}
+                            bg={'#F9F9F9'}
+                            className="cardHero">
+                            <CardHeader>
+                                <Heading size='md' className="imgHero"> <FaTrophy /> </Heading>
+                            </CardHeader>
+                            <CardBody>
+                                <Text>+20 Proyects</Text>
+                            </CardBody>
+                        </Card>
+                    </Stack>
 
                 </Stack>
             </Stack>
         </Container>
-    
+
     )
 }
 

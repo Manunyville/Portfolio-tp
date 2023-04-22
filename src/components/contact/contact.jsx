@@ -25,7 +25,7 @@ const Contact = () => {
                         borderRadius='5px'
                         placeholder='Full name'
                         padding='25px'
-                        width='450px'
+                        width={{base:'250px',md:'450px'}}
                     />
                     <Input
                         id="email"
@@ -35,7 +35,7 @@ const Contact = () => {
                         borderRadius='5px'
                         placeholder='Email'
                         padding='25px'
-                        width='450px'
+                        width={{base:'250px',md:'450px'}}
                     />
                     <ValidationError
                         prefix="Email"
@@ -49,7 +49,7 @@ const Contact = () => {
                         borderRadius='5px'
                         placeholder='Message'
                         height='100px'
-                        width='450px'
+                        width={{base:'250px',md:'450px'}}
 
                     />
                     <ValidationError
@@ -62,7 +62,7 @@ const Contact = () => {
                     <Button type="submit" disabled={state.submitting}
                         
                         as={motion.button}
-                        width='150px'
+                        width={{base:'85px',md:'150px'}}
                         whileHover={{ color: '#0C7FB0' }}
                         color={'#F9F9F9'}
                         bg={'#0C7FB0'}
@@ -75,19 +75,19 @@ const Contact = () => {
         );
     }
     return (
-        <Container id='contact'width='full'>
-            <VStack marginTop="20px" className='stackForm'>
+        <Stack id='contact' w='full'>
+            <VStack marginTop="20px" >
                 <Text color={'#0C7FB0'}>Have something in your mind?</Text>
-                <Stack>
-                    <Image src={Azul} className='imgContactoAzul'/>
-                </Stack>
+                <Stack w="full" align={'end'}>
+                        <Image src={Azul}  h={'70px'} w={'50px'}/>
+                    </Stack>
                 <Heading>Contact me</Heading>
                 <Stack >
                     <ContactForm />
 
                 </Stack>
             </VStack>
-        </Container>
+        </Stack>
     )
 }
 export default Contact

@@ -12,8 +12,8 @@ const Footer = () => {
 
     return (
 
-        <Stack width={{'2xl':"full", xl:'full', md:'1300px',sm:'900px',base:'550px'}} bg={'#061820'} color={'#F9F9F9'} marginTop='35px' gap="15px">
-            <HStack justify={'space-evenly'} marginTop="35px">
+        <Stack width={{base:'full', xl:'full', md:'1300px',}} bg={'#061820'} color={'#F9F9F9'} marginTop='35px' gap="15px">
+            <Stack justify={'space-evenly'} marginTop="35px" direction={{base:'column', md:'row'}} textAlign={{base:'center'}}>
                 <VStack>
                     <Heading fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>Customer support</Heading>
                     <Text fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>Contact me and get consultation on your design</Text>
@@ -29,14 +29,14 @@ const Footer = () => {
                             <Input type="email" 
                             placeholder='Enter email' 
                             borderRadius='0px' 
-                            paddingX='35px' 
+                            paddingX={{base:'8px',md:'35' }}
                             bg={'#FFFFFF'} 
-                            paddingY='24px' />
+                            paddingY={{base:'4px',md:'24px'}} />
                             <Button marginTop='0px'
                             borderRadius='2px' 
                             as={motion.button} 
-                            paddingX='25px'
-                            paddingY='25px'
+                            paddingX={{base:'4px',md:'25px'}}
+                            paddingY={{base:'4px',md:'25px'}}
                             whileHover={{ color: '#0C7FB0' }} 
                             color={'#F9F9F9'} 
                             bg={'#0C7FB0'} 
@@ -45,9 +45,9 @@ const Footer = () => {
                         </HStack>
                      </form>
                 </VStack>
-            </HStack>
+            </Stack>
 
-            <HStack justify={'space-evenly'}>
+            <Stack justify={'space-evenly'}  direction={{base:'column', md:'row'}}>
             <VStack>
                     <Heading fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}} color={'#07CFB0'}>Manuel Nyville Vito</Heading>
                     <Text fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>Front end developer</Text>
@@ -124,9 +124,9 @@ const Footer = () => {
                     </Button>
                 </VStack>
 
-            </HStack>
+            </Stack>
             <HStack justify="center" >
-                <Text fontSize={{xl:'17px',md:'13px',sm:'10px',base:'8px'}}>Copyright 2023 Inc. All rights reserved. | Terms of Use | Updated Privacy Policy | Accessibility</Text>
+                <Text fontSize={{base:'8px',md:'13px'}}>Copyright 2023 Inc. All rights reserved. | Terms of Use | Updated Privacy Policy | Accessibility</Text>
             </HStack>
         </Stack>
        

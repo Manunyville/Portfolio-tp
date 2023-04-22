@@ -8,40 +8,21 @@ const About = () => {
 
     return (
 
-        <Stack id='about' bg={'#F9F9F9'}>
-            <HStack
-              
-               
-                gap={{ xl: "40px", md: '75px', sm: '45px', base: '15px' }}
-                marginLeft={{ '2xl': '50px', xl: "40px", md: '110px', sm: '55px', base: '0px' }}
-                marginTop="15px"
-                flexDirection={{ xl: 'row', md: 'row', sm: 'column', base: 'column' }}>
-
-
-                <HStack height={{'2xl':'650px',xl:'475px',md:'320px',xs:'270px'}}
-                    width={{ '2xl': 'full', xl: "1200px", md: '800px', sm: '450px', base: '250px' }}
-                    justify={'center'}>
+        <Stack id='about' bg={'#F9F9F9'} width={'full'} paddingY={10}>
+            <Stack justifyContent={{base:'center', md: 'space-evenly'}} alignItems={'center'} direction={{base:'column', md:'row'}}>
+                <Stack>
                     <Image src={Foto}
-                        w={{ xl: "200px", md: '150px', sm: '125px', base: '55px' }}
-                        h={{ xl: "200px", md: '150px', sm: '65px', base: '15px' }} />
-                </HStack>
-                <VStack
-                    justify={'center'}
-                    textAlign={'start'}>
-                    <Stack
-                        marginRight={{ xl: '110px' }}
-                    >
-                        <Heading fontSize={{ xl: '45px', md: '35px', sm: '20px', base: '5px' }}>About me</Heading>
-                        <Heading fontSize={{ xl: '30px', md: '20px', sm: '10px', base: '5px' }}
-                            color={'#6D7173'}> 02 Meses de experiencia en desarrolo Front end</Heading>
-                        <Text color={'#6D7173'} fontSize={{ xl: '15px', md: '10px', sm: '8px', base: '5px' }}>Hola, yo soy Manuel, un desarrollador Front end, me encargo del desarrollo de paginas web y aplicaciones web de acuerdo a lo que el cliente proponga. soy creador de contenido, realizo tanto filmaciones como fotografias para la promocion e impulsion de productos, tambien me encargo de la edicion de estos. </Text>
-                    </Stack>
-                
-                </VStack>
-
-
-            </HStack>
-        </Stack >
+                        width={{ base:'165px',md: '225px', lg: '350px' }}
+                        height={{base:'165px', md: '225px', lg: '350px' }} />
+                </Stack>
+                <Stack w={{base:'80%',md:'40%'}} textAlign={'start'} direction={'column'} >
+                    <Heading fontSize={{ base: '20px', md:'25px' }} textAlign={{base:'center', md:'start'}}>About me</Heading>
+                    <Heading fontSize={{ base:'16px', md:'20px' }}
+                        color={'#6D7173'}> 02 Meses de experiencia en desarrolo Front end</Heading>
+                    <Text color={'#6D7173'} fontSize={{ base: '15px', md:'20' }}>Hola, yo soy Manuel, un desarrollador Front end, me encargo del desarrollo de paginas web y aplicaciones web de acuerdo a lo que el cliente proponga. soy creador de contenido, realizo tanto filmaciones como fotografias para la promocion e impulsion de productos, tambien me encargo de la edicion de estos. </Text>
+                </Stack>
+            </Stack>
+        </Stack>
 
 
 

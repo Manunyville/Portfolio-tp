@@ -1,7 +1,4 @@
-*{
-    margin: 0 ;
-    padding: 0;
-}
+
 
 .cardHero{
     width: 150px;
@@ -9,8 +6,4 @@
 }
 .imgHero{
     position: absolute;
-    left: 60px;
-    bottom: 115px;
-    background-color: #0C7FB0;
-    border-radius: 50%;
 }

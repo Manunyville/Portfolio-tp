@@ -10,36 +10,36 @@ import Hotel from '../../assets/img/Hotelpagina.jpeg'
 const Portfolio = () => {
 
     return (
-        <Container id='proyectos' width="full">
-            <VStack>
-                <VStack marginTop={{xl:'10px',md:'10px',sm:'120px'}}>
-                    <HStack width="full">
-                        <Image src={Azderecha} className='imgAbs' />
-                    </HStack>
+        <Stack id='proyectos' w="full" justifyContent={'center'} alignItems={'center'}>
+            <Stack w="full" align={'end'}>
+                <Image src={Azderecha} className='imgAbs' h={'70px'} w={'50px'} />
+            </Stack>
+            <VStack w={{ base: 'full', md: '80%' }} p={2} >
+                <VStack>
                     <Text color={'#0C7FB0'}>Recent projects</Text>
                     <Heading>My Portfolio</Heading>
                 </VStack>
-                <HStack gap='75px' 
-                className='stackPortfolio' 
-                flexDirection={{xl:'row',md:'row', sm:'column',base:'column'}}>
-                    <Card 
-                    width={{xl:'270px', md: '220px',sm:'170px',base:'110px' }}
-                    height={{xl:'350px',md:'auto' , xs:'auto',base:'auto'}}
-                    bg={'#F9F9F9'} 
-                    marginLeft='10px'
-                    alignItems={'center'}>
+                <Stack
+                    gap={6}
+                    textAlign={'center'}
+                    alignItems={'center'}
+                    justifyContent={{ base: 'center', md: 'space-evenly' }}
+                    direction={{ base: 'column', md: 'row' }}
+                    className='stackPortfolio'  >
+                    <Card
+                        width={'xs'}
+                        bg={'#F9F9F9'}
+                        alignItems={'center'}>
                         <CardHeader>
-
-                            <Image src={Portafolio} 
-                            height={{xl:'150px',md:'100px',sm:'70px',base:'30px'}} />
-                            <Heading fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}> Portfolio V1</Heading>
+                            <Image src={Portafolio}
+                            />
+                            <Heading fontSize={{ base: '12px', md: '18px' }}> Portfolio V1</Heading>
                         </CardHeader>
                         <CardBody>
-                            <Text fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Es una version anterior de portfolio</Text>
+                            <Text fontSize={{ base: '10px', md: '15px' }}>Es una version anterior de portfolio</Text>
                             <Button marginTop='4px'
                                 as={motion.button}
-                                paddingX={{xl:'65px',md:'35px',sm:'10px'}}
-                                size={{base:'xs'}}
+                                paddingX={{ xl: '65px', md: '35px', sm: '10px' }}
                                 whileHover={{ color: '#0C7FB0' }}
                                 color={'#F9F9F9'}
                                 bg={'#0C7FB0'}
@@ -47,27 +47,20 @@ const Portfolio = () => {
                                 View on github
                             </Button>
                         </CardBody>
-
-
                     </Card>
-                    <Card 
-                    width={{xl:'270px', md: '220px',sm:'170px',base:'110px' }} 
-                    height={{xl:'350px',md:'auto' , xs:'auto',base:'auto'}}
-                     bg={'#F9F9F9'} 
-                     marginLeft='10px'
-                     alignItems={'center'}>
-
+                    <Card
+                        width={'xs'}
+                        bg={'#F9F9F9'}
+                        alignItems={'center'}>
                         <CardHeader>
-                            <Image src={Hotel}
-                              height={{xl:'150px',md:'100px',sm:'70px',base:'30px'}} />
-                            <Heading fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}> Hotel web page</Heading>
+                            <Image src={Hotel} />
+                            <Heading fontSize={{ base: '12px', md: '18px' }}> Hotel web</Heading>
                         </CardHeader>
                         <CardBody>
-                            <Text fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Es una pagina creada para un hotel turistico</Text>
+                            <Text fontSize={{ base: '10px', md: '15px' }}>Es una pagina creada para un hotel turistico</Text>
                             <Button marginTop='4px'
                                 as={motion.button}
-                                paddingX={{xl:'65px',md:'35px',sm:'10px'}}
-                                size={{base:'xs'}}
+                                paddingX={{ xl: '65px', md: '35px', sm: '10px' }}
                                 whileHover={{ color: '#0C7FB0' }}
                                 color={'#F9F9F9'}
                                 bg={'#0C7FB0'}
@@ -75,36 +68,29 @@ const Portfolio = () => {
                                 View on github
                             </Button>
                         </CardBody>
-
-
                     </Card>
-                    <Card 
-                    width={{xl:'270px', md: '220px',sm:'170px',base:'110px' }}
-                    height={{xl:'350px',md:'auto' , xs:'auto',base:'auto'}}
-                     bg={'#F9F9F9'} 
-                     marginLeft='10px'
-                     alignItems={'center'}>
-
+                    <Card
+                        width={'xs'}
+                        bg={'#F9F9F9'}
+                        alignItems={'center'}>
                         <CardHeader>
-                            <Image src={Deluxe} 
-                             height={{xl:'150px',md:'100px',sm:'70px',base:'30px'}} />
-                            <Heading fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}> Promoving Torpedo</Heading>
+                            <Image src={Deluxe} w={'140px'} h={'140px'} />
+                            <Heading fontSize={{ base: '12px', md: '18px' }}> Promove torpedo</Heading>
                         </CardHeader>
                         <CardBody>
-                            <Text fontSize={{xl:'15px',md:'10px',sm:'8px',base:'5px'}}>Doy a conocer un nuevo modelo de mate, un torpedo deluxe</Text>
+                            <Text fontSize={{ base: '10px', md: '15px' }}>Doy a conocer un nuevo modelo de mate, un torpedo deluxe</Text>
                             <Button marginTop='4px'
                                 as={motion.button}
-                                paddingX={{xl:'65px',md:'35px',sm:'10px'}}
-                                size={{base:'xs'}}
+                                paddingX={{ xl: '65px', md: '35px', sm: '10px' }}
                                 whileHover={{ color: '#0C7FB0' }}
-                                color={'#F9F9F9'} bg={'#0C7FB0'}
+                                color={'#F9F9F9'}
+                                bg={'#0C7FB0'}
                                 variant='solid'>
                                 View on github
                             </Button>
                         </CardBody>
-
                     </Card>
-                </HStack>
+                </Stack>
                 <Stack>
                     <Button marginTop='4px'
                         as={motion.button}
@@ -117,7 +103,7 @@ const Portfolio = () => {
                     </Button>
                 </Stack>
             </VStack>
-        </Container>
+        </Stack>
     )
 }
 export default Portfolio
